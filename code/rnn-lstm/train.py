@@ -11,11 +11,13 @@ from utils import preprocessing
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument("train", default="train.csv")
-    parser.add_argument("train_size", default=.8)
-    parser.add_argument("test_size", default=.2)
-    parser.add_argument("vocab_size", default=1000)
-    parser.add_argument("save", default="model.h5")
+    parser.add_argument("--train", default="train.csv")
+    parser.add_argument("--train_size", default=.8)
+    parser.add_argument("--test_size", default=.2)
+    parser.add_argument("--vocab_size", default=1000)
+	parser.add_argument("--epochs", default=10)
+	parser.add_argument("--validation_steps", default=30)
+    parser.add_argument("--save", default="model.h5")
 
     args = parser.parse_args()
 
@@ -36,8 +38,8 @@ def main():
 
     model = create_model(encoder=encoder)
 
-    hist = model.fit(X_train, y_train, epochs=10, validation_data=(
-        X_test, y_test), validation_steps=30)
+    hist = model.fit(X_train, y_train, epochs=args.epochs, validation_data=(
+        X_test, y_test), validation_steps=args.validation_steps)
 
     print(f"Train loss: {hist['loss']}")
     print(f"Train accuracy: {hist['acc']}")
