@@ -1,5 +1,6 @@
 import re
 
+
 def preprocessing(tweet):
     # remove stock market tickers like $GE
     tweet = re.sub(r'\$\w*', '', tweet)

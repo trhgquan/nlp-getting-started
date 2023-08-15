@@ -1,7 +1,7 @@
-import numpy as np
 import evaluate
-from transformers import AutoTokenizer, EarlyStoppingCallback
-from transformers import AutoModelForSequenceClassification, Trainer, TrainingArguments
+import numpy as np
+from transformers import (AutoModelForSequenceClassification, AutoTokenizer,
+                          EarlyStoppingCallback, Trainer, TrainingArguments)
 
 
 def create_model(pretrain, num_labels=2):

@@ -1,11 +1,12 @@
 #!/bin/python3
 
-import numpy as np
+from argparse import ArgumentParser
 
+import numpy as np
 from model import create_model
 from utils import clean_sentence
-from argparse import ArgumentParser
-              
+
+
 def main():
     parser = ArgumentParser()
     parser.add_argument("--sentence")

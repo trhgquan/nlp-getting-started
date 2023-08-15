@@ -4,13 +4,12 @@ from argparse import ArgumentParser
 
 import numpy as np
 import pandas as pd
+from dataset import DisasterDataset
+from model import create_model, create_trainer
 from sklearn.base import accuracy_score
 from sklearn.metrics import (classification_report, f1_score, precision_score,
                              recall_score)
 from sklearn.model_selection import train_test_split
-
-from dataset import DisasterDataset
-from model import create_model, create_trainer
 
 random_state = 42
 

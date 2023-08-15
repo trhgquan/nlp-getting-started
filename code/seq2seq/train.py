@@ -15,8 +15,8 @@ def main():
     parser.add_argument("--train_size", default=.8)
     parser.add_argument("--test_size", default=.2)
     parser.add_argument("--vocab_size", default=1000)
-	parser.add_argument("--epochs", default=10)
-	parser.add_argument("--validation_steps", default=30)
+    parser.add_argument("--epochs", default=10)
+    parser.add_argument("--validation_steps", default=30)
     parser.add_argument("--save", default="model.h5")
 
     args = parser.parse_args()

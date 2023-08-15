@@ -1,9 +1,8 @@
 #!/bin/python3
 
-import tensorflow as tf
-import numpy as np
-
 from argparse import ArgumentParser
+
+import numpy as np
 from model import create_encoder, create_model
 from utils import preprocessing
 
