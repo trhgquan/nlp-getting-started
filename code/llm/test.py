@@ -3,21 +3,9 @@
 import numpy as np
 
 from model import create_model
-from utils import remove_emoji, remove_html, remove_punct, remove_URL
+from utils import clean_sentence
 from argparse import ArgumentParser
-
-
-def clean_sentence(sentence):
-    sentence = sentence.lower()
-    sentence = remove_emoji(sentence)
-    sentence = remove_html(sentence)
-    sentence = remove_punct(sentence)
-    sentence = remove_URL(sentence)
-    sentence = sentence.replace("\s+", " ", regex=True)
-
-    return sentence
-
-
+              
 def main():
     parser = ArgumentParser()
     parser.add_argument("--sentence")

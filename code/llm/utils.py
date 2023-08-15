@@ -42,3 +42,15 @@ def clean_df(df):
     df["text"] = df.text.replace("\s+", " ", regex=True)
     
     return df
+
+
+
+def clean_sentence(sentence):
+    sentence = sentence.lower()
+    sentence = remove_emoji(sentence)
+    sentence = remove_html(sentence)
+    sentence = remove_punct(sentence)
+    sentence = remove_URL(sentence)
+    sentence = sentence.replace("\s+", " ", regex=True)
+
+    return sentence
