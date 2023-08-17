@@ -1,7 +1,7 @@
-from sklearn.pipeline import Pipeline           
+from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
+
 
 def create_pipeline(classifier=SVC):
     ngram_range = (1, 2)
