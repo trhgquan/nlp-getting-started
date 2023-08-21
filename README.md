@@ -34,15 +34,15 @@ However there are some exceptions where a specific preprocessing method of the p
 
 | Model                                                                                          | Training stats | Public F1   |
 | ---------------------------------------------------------------------------------------------- | -------------- | ----------- |
-| BiLSTM Seq2Seq                                                                                 | [^1]           | 0.78302     |
-| Finetuning [BERT](https://huggingface.co/bert-base-uncased)                                    | [^2]           | 0.82899     |
-| Finetuning [DistilBERT](https://huggingface.co/distilbert-base-uncased)                        | [^2]           | 0.82439     |
-| Finetuning [XLM-RoBERTa](https://huggingface.co/xlm-roberta-base)                              | [^2]           | 0.82439     |
-| Finetuning [AlBERTa](https://huggingface.co/albert-base-v2)                                    | [^2]           | 0.79528     |
+| Finetuning [Twitter RoBERTa](https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m) | [^2]           | **0.83083** |
 | Finetuning [BERTweet](https://huggingface.co/vinai/bertweet-large)                             | [^2]           | 0.82899     |
+| Finetuning [BERT](https://huggingface.co/bert-base-uncased)                                    | [^2]           | 0.82899     |
 | Finetuning [RoBERTa](https://huggingface.co/roberta-base)                                      | [^2]           | 0.82868     |
 | Finetuning [XLNet](https://huggingface.co/xlnet-base-cased)                                    | [^2]           | 0.82592     |
-| Finetuning [Twitter RoBERTa](https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m) | [^2]           | **0.83083** |
+| Finetuning [XLM-RoBERTa](https://huggingface.co/xlm-roberta-base)                              | [^2]           | 0.82439     |
+| Finetuning [DistilBERT](https://huggingface.co/distilbert-base-uncased)                        | [^2]           | 0.82439     |
+| Finetuning [AlBERTa](https://huggingface.co/albert-base-v2)                                    | [^2]           | 0.79528     |
+| BiLSTM Seq2Seq                                                                                 | [^1]           | 0.78302     |
 
 [^1]: Train size = 0.8, vocab size = 1000, training with 10 epochs.
 [^2]: Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs, early stopping after 5 epochs.
