@@ -36,7 +36,8 @@ However there are some exceptions where a specific preprocessing method of the p
 
 | Model                                                                                                                                         | Training stats | Public F1   |
 | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------- |
-| Finetuning [Twitter RoBERTa 2021 124M](https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m)                                      | [^2]           | **0.83083** |
+| Finetuning [DeBERTa v3](https://huggingface.co/microsoft/deberta-v3-base)                                                                     | [^2]           | **0.83205** |
+| Finetuning [Twitter RoBERTa 2021 124M](https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m)                                      | [^2]           | 0.83083     |
 | Finetuning [BERTweet](https://huggingface.co/vinai/bertweet-large)                                                                            | [^2]           | 0.82899     |
 | Finetuning [BERT](https://huggingface.co/bert-base-uncased)                                                                                   | [^2]           | 0.82899     |
 | Finetuning [RoBERTa](https://huggingface.co/roberta-base)                                                                                     | [^2]           | 0.82868     |
