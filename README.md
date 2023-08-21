@@ -1,6 +1,9 @@
 # Natural Language Processing with Disaster Tweets
 [Natural Language Processing with Disaster Tweets](https://www.kaggle.com/competitions/nlp-getting-started)
 
+[Statistical models notebooks](https://www.kaggle.com/code/trhgquan/disaster-tweet-tfidf)
+[Deep learning notebooks](https://www.kaggle.com/code/trhgquan/disaster-tweet-with-llms)
+
 This project is licensed under [The GNU GPL v3](LICENSE)
 
 ## Baselines
