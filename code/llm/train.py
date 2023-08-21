@@ -11,6 +11,8 @@ from sklearn.metrics import (classification_report, f1_score, precision_score,
                              recall_score)
 from sklearn.model_selection import train_test_split
 
+from utils import clean_df, normalizeTweet
+
 random_state = 42
 
 
@@ -49,6 +51,12 @@ def main():
     # Read and create dataset
     train_df = pd.read_csv(args.train)
 
+	# Normalize text
+	if args.model == "vinai/bertweet-large":
+		train_df["text"] = train_df["text"].apply(lambda x: normalizeTweet(x))
+	else:
+		train_df = clean_df(train_df)
+
     df_train, df_remain = train_test_split(
         train_df, test_size=1 - args.train_size, random_state=random_state, stratify=train_df["target"])
     df_dev, df_test = train_test_split(
@@ -70,6 +78,13 @@ def main():
         labels=df_test["target"].tolist()
     )
 
+	# Droppiing last batch to fit the training
+	if args.model == "xlnet-base-cased":
+		dataloader_drop_last = True
+	else:
+		dataloader_drop_last = False
+
+
     trainer = create_trainer(
         model=model,
         train_dataset=train_dataset,
@@ -85,7 +100,8 @@ def main():
         warmup_steps=args.warmup_steps,
         weight_decay=args.weight_decay,
         metric_for_best_model=args.metric_for_best_model,
-        load_best_model_at_end=args.load_best_model_at_end
+        load_best_model_at_end=args.load_best_model_at_end,
+		dataloader_drop_last=dataloader_drop_last
     )
 
     print("Training")

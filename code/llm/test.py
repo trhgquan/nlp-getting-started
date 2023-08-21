@@ -20,7 +20,10 @@ def main():
         num_labels=args.num_labels
     )
 
-    sentence = clean_sentence(args.sentence)
+	if args.model == "vinai/bertweet-large":
+		sentence = normalizeTweet(args.sentence)
+	else:
+	    sentence = clean_sentence(args.sentence)
 
     print("Predicting..")
     predict = np.argmax(model.predict(sentence), axis=1)
