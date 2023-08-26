@@ -52,6 +52,7 @@ However there are some exceptions where a specific preprocessing method of the p
 | Finetuning [XLNet](https://huggingface.co/xlnet-base-cased)                                                                                   | [^2]           | 0.82592     |
 | Finetuning [XLM-RoBERTa](https://huggingface.co/xlm-roberta-base)                                                                             | [^2]           | 0.82439     |
 | Finetuning [DistilBERT](https://huggingface.co/distilbert-base-uncased)                                                                       | [^2]           | 0.82439     |
+| Finetuning [BART](https://huggingface.co/facebook/bart-base)                                                                                  | [^2]           | 0.81520     |
 | Finetuning [AlBERTa](https://huggingface.co/albert-base-v2)                                                                                   | [^2]           | 0.79528     |
 | BiLSTM Seq2Seq                                                                                                                                | [^1]           | 0.78302     |
 
