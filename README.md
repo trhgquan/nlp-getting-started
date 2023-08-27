@@ -5,10 +5,19 @@ This project is licensed under [The GNU GPL v3](LICENSE)
 
 ## Notebooks 
 
-*(using different models in different versions, please a check through the version history)*
+*(using different models in different versions, please have a look at the version history)*
 
 - [Statistical models notebook](https://www.kaggle.com/code/trhgquan/disaster-tweet-tfidf)
 - [Deep learning notebooks](https://www.kaggle.com/code/trhgquan/disaster-tweet-with-llms)
+
+## Code
+
+View training & testing script's help with this command:
+```
+python <script>.py --help
+```
+
+**Note**: use those scripts at your own risk, since I don't normally re-train models on my personal PC.
 
 ## Baselines
 
