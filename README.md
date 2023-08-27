@@ -50,6 +50,8 @@ Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs
 
 *All experiments were conducted under the same random seed (42)*
 
+[wandb.ai report](https://api.wandb.ai/links/khongsomeo/5rxjwfn6)
+
 #### Statistical models
 
 | Model                         | Training stats             | Public scores |
