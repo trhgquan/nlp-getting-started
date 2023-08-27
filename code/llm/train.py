@@ -38,6 +38,7 @@ def main():
     parser.add_argument("--weight_decay", default=.01)
     parser.add_argument("--metric_for_best_model", default="accuracy")
     parser.add_argument("--load_best_model_at_end", default=True)
+    parser.add_argument("--preprocessing_url_mode", default="remove_url")
 
     args = parser.parse_args()
 
@@ -51,11 +52,12 @@ def main():
     # Read and create dataset
     train_df = pd.read_csv(args.train)
 
-	# Normalize text
-	if args.model == "vinai/bertweet-large":
-		train_df["text"] = train_df["text"].apply(lambda x: normalizeTweet(x))
-	else:
-		train_df = clean_df(train_df)
+    # Normalize text
+    if args.model == "vinai/bertweet-large":
+        train_df["text"] = train_df["text"].apply(
+            lambda x: normalizeTweet(x))
+    else:
+        train_df = clean_df(train_df, mode= args.preprocessing_url_mode)
 
     df_train, df_remain = train_test_split(
         train_df, test_size=1 - args.train_size, random_state=random_state, stratify=train_df["target"])
@@ -78,12 +80,11 @@ def main():
         labels=df_test["target"].tolist()
     )
 
-	# Droppiing last batch to fit the training
-	if args.model == "xlnet-base-cased":
-		dataloader_drop_last = True
-	else:
-		dataloader_drop_last = False
-
+    # Droppiing last batch to fit the training
+    if args.model == "xlnet-base-cased":
+        dataloader_drop_last = True
+    else:
+        dataloader_drop_last = False
 
     trainer = create_trainer(
         model=model,
@@ -101,7 +102,7 @@ def main():
         weight_decay=args.weight_decay,
         metric_for_best_model=args.metric_for_best_model,
         load_best_model_at_end=args.load_best_model_at_end,
-		dataloader_drop_last=dataloader_drop_last
+        dataloader_drop_last=dataloader_drop_last
     )
 
     print("Training")

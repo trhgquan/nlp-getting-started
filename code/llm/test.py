@@ -4,7 +4,13 @@ from argparse import ArgumentParser
 
 import numpy as np
 from model import create_model
-from utils import clean_sentence
+from utils import clean_sentence, normalizeTweet
+
+
+def model_predict(model_pred):
+    preds = model_pred.predictions[0] if isinstance(
+        model_pred, tuple) else model_pred.predictions
+    return np.argmax(preds, axis=1)
 
 
 def main():
@@ -20,13 +26,14 @@ def main():
         num_labels=args.num_labels
     )
 
-	if args.model == "vinai/bertweet-large":
-		sentence = normalizeTweet(args.sentence)
-	else:
-	    sentence = clean_sentence(args.sentence)
+    if args.model == "vinai/bertweet-large":
+        sentence = normalizeTweet(args.sentence)
+    else:
+        sentence = clean_sentence(args.sentence)
 
     print("Predicting..")
-    predict = np.argmax(model.predict(sentence), axis=1)
+
+    predict = model_predict(model.predict(sentence))
     print(predict)
 
 

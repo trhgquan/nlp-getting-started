@@ -33,11 +33,14 @@ def create_trainer(**kwargs):
     glue_metric = evaluate.load("glue", "mnli")
 
     def compute_metrics(eval_pred):
-        predictions, labels, _ = eval_pred
+        preds = eval_pred.predictions[0] if isinstance(
+            eval_pred, tuple) else eval_pred.predictions
 
-        predictions = np.argmax(predictions, axis=1)
+        references = eval_pred.label_ids
 
-        return glue_metric.compute(predictions=predictions, references=labels)
+        predictions = np.argmax(preds, axis=1)
+
+        return glue_metric.compute(predictions=predictions, references=references)
 
     trainer = Trainer(
         model=kwargs.get("model", None),

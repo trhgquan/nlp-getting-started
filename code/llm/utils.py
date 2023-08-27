@@ -38,14 +38,29 @@ def remove_punct(text):
     return text.translate(table)
 
 
-def clean_df(df):
+def remove_url_user(text):
+    preprocessed_text = []
+    for t in text.split():
+        if len(t) > 1:
+            t = '@user' if t[0] == '@' and t.count('@') == 1 else t
+            t = 'http' if t.startswith('http') else t
+        preprocessed_text.append(t)
+    return ' '.join(preprocessed_text)
+
+
+def clean_df(df, mode="remove_url"):
     # Lowering
     df["text"] = df["text"].apply(lambda x: x.lower())
 
     # Apply text cleaning
     df["text"] = df["text"].apply(lambda x: remove_emoji(x))
     df["text"] = df["text"].apply(lambda x: remove_html(x))
-    df["text"] = df["text"].apply(lambda x: remove_URL(x))
+
+    if mode == "remove_url":
+        df["text"] = df["text"].apply(lambda x: remove_URL(x))
+    else:
+        df["text"] = df["text"].apply(lambda x: remove_url_user(x))
+
     df["text"] = df["text"].apply(lambda x: remove_punct(x))
 
     # Remove multiple spaces
@@ -54,15 +69,21 @@ def clean_df(df):
     return df
 
 
-def clean_sentence(sentence):
+def clean_sentence(sentence, mode="remove_url"):
     sentence = sentence.lower()
     sentence = remove_emoji(sentence)
     sentence = remove_html(sentence)
     sentence = remove_punct(sentence)
-    sentence = remove_URL(sentence)
+
+    if mode == "remove_url":
+        sentence = remove_URL(sentence)
+    else:
+        sentence = remove_url_user(sentence)
+
     sentence = sentence.replace("\s+", " ", regex=True)
 
     return sentence
+
 
 def normalizeToken(token):
     lowercased_token = token.lower()
@@ -73,17 +94,18 @@ def normalizeToken(token):
     elif len(token) == 1:
         return demojize(token)
     else:
-        if token == "’":
+        if token == "ï¿½":
             return "'"
-        elif token == "…":
+        elif token == "ï¿½":
             return "..."
         else:
             return token
 
-def normalizeTweet(tweet):
-	tokenizer = TweetTokenizer()
 
-    tokens = tokenizer.tokenize(tweet.replace("’", "'").replace("…", "..."))
+def normalizeTweet(tweet):
+    tokenizer = TweetTokenizer()
+
+    tokens = tokenizer.tokenize(tweet.replace("ï¿½", "'").replace("ï¿½", "..."))
     normTweet = " ".join([normalizeToken(token) for token in tokens])
 
     normTweet = (
