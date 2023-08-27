@@ -26,43 +26,144 @@ However there are some exceptions where a specific preprocessing method of the p
 - [BERTweet](https://huggingface.co/vinai/bertweet-large) [using TweetTokenizer to mask and replace some tokens](https://github.com/VinAIResearch/BERTweet#-normalize-raw-input-tweets)
 - [Twitter RoBERTa](https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m) requires masking username and url as specific tokens.
 
+### Training configurations
+
+#### Statistical models
+Using full training set.
+  
+#### Deep learning models
+Train size = 0.8, vocab size = 1000, training with 10 epochs.
+
+#### LLMs
+Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs, early stopping after 5 epochs.
+
 ### Results
 
 *All experiments were conducted under the same random seed (42)*
 
 #### Statistical models
 
-| Model                         | Training stats | Public scores |
-| ----------------------------- | -------------- | ------------- |
-| SVC + TFIDF + CountVectorizer | [^3]           | 0.80140       |
-| SVC + TFIDF                   | [^3]           | 0.80140       |
-| RF + TFIDF + CountVectorizer  | [^3]           | 0.78792       |
+| Model                         | Training stats             | Public scores |
+| ----------------------------- | -------------------------- | ------------- |
+| SVC + TFIDF + CountVectorizer | [[1]](#statistical-models) | 0.80140       |
+| SVC + TFIDF                   | [[1]](#statistical-models) | 0.80140       |
+| RF + TFIDF + CountVectorizer  | [[1]](#statistical-models) | 0.78792       |
 
 
 #### Deep learning models
 
-| Model                                                                                                                                       | Training stats | Public F1   |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------- |
-| [AlBERT v2 (base)](https://huggingface.co/albert-base-v2)                                                                                   | [^2]           | 0.79528     |
-| [AlBERT v2 (large)](https://huggingface.co/albert-base-v2)                                                                                  | [^2]           | (todo)      |
-| [BART (base)](https://huggingface.co/facebook/bart-base)                                                                                    | [^2]           | 0.82684     |
-| [BART (large)](https://huggingface.co/facebook/bart-large)                                                                                  | [^2]           | 0.83726     |
-| [BERT (base uncased)](https://huggingface.co/bert-base-uncased)                                                                             | [^2]           | 0.82899     |
-| [BERT (large uncased)](https://huggingface.co/bert-large-uncased)                                                                           | [^2]           | 0.83052     |
-| [BERTweet (large)](https://huggingface.co/vinai/bertweet-large)                                                                             | [^2]           | 0.82899     |
-| [DeBERTa v3 (base)](https://huggingface.co/microsoft/deberta-v3-base)                                                                       | [^2]           | 0.83205     |
-| [DistilBERT (base uncased)](https://huggingface.co/distilbert-base-uncased)                                                                 | [^2]           | 0.82439     |
-| [RoBERTa (base)](https://huggingface.co/roberta-base)                                                                                       | [^2]           | 0.82868     |
-| [RoBERTa (large)](https://huggingface.co/roberta-large)                                                                                     | [^2]           | **0.84033** |
-| [Twitter RoBERTa Sentiment (base - latest)](https://huggingface.co/https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) | [^2]           | 0.82776     |
-| [Twitter RoBERTa (2021 - 124M)](https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m)                                           | [^2]           | 0.83083     |
-| [XLM-RoBERTa (base)](https://huggingface.co/xlm-roberta-base)                                                                               | [^2]           | 0.82439     |
-| [XLNet (base cased)](https://huggingface.co/xlnet-base-cased)                                                                               | [^2]           | 0.82592     |
-| BiLSTM Seq2Seq                                                                                                                              | [^1]           | 0.78302     |
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Model</th>
+    <th>Training configurations</th>
+    <th>Public F1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">AlBERT v2</td>
+    <td><a href="https://huggingface.co/albert-base-v2">base</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.79528</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/albert-large-v2">large</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
+  </tr>
+  <tr>
+    <td rowspan="2">BART</td>
+    <td><a href="https://huggingface.co/facebook/bart-base">base</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.82684</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/facebook/bart-large">large</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.83726</td>
+  </tr>
+  <tr>
+    <td rowspan="2">BERT</td>
+    <td><a href="https://huggingface.co/bert-base-uncased">base uncased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.82899</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/bert-large-uncased">large uncased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.83052</td>
+  </tr>
+  <tr>
+    <td>BERTweet</td>
+    <td><a href="https://huggingface.co/vinai/bertweet-large">large</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.82899</td>
+  </tr>
+  <tr>
+    <td>DeBERTa v3</td>
+    <td><a href="https://huggingface.co/microsoft/deberta-v3-base">base</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.83205</td>
+  </tr>
+  <tr>
+    <td rowspan="2">DistilBERT</td>
+    <td><a href="https://huggingface.co/distilbert-base-uncased">base uncased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.82439</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/distilbert-base-cased">base cased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
+  </tr>
+  <tr>
+    <td rowspan="2">RoBERTa</td>
+    <td><a href="https://huggingface.co/roberta-base">base</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.82868</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/roberta-large">large</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.84033</td>
+  </tr>
+  <tr>
+    <td>Twitter RoBERTa Sentiment</td>
+    <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest">base latest</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.82776</td>
+  </tr>
+  <tr>
+    <td>Twitter RoBERTa</td>
+    <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m">2021 - 144M</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.83083</td>
+  </tr>
+  <tr>
+    <td rowspan="2">XLM-RoBERTa</td>
+    <td><a href="https://huggingface.co/xlm-roberta-base">base</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.82439</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/xlm-roberta-large">large</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
+  </tr>
+  <tr>
+    <td>XLNet</td>
+    <td><a href="https://huggingface.co/xlnet-base-cased">base cased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.82592</td>
+  </tr>
+  <tr>
+    <td>BiLSTM Seq2Seq</td>
+    <td></td>
+    <td><a href="#deep-learning-models">[3]</a></td>
+    <td>0.78302</td>
+  </tr>
+</tbody>
+</table>
 
 There are several more LLMs that's worth trying (e.g. DeBERTa v3 large, ..etc) but Kaggle's RAM cannot handle those big boi. You can try training & finetuning them in a more powerful platform.
-
-[^1]: Train size = 0.8, vocab size = 1000, training with 10 epochs.
-[^2]: Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs, early stopping after 5 epochs.
-[^3]: Full training set
-
