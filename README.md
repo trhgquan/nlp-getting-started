@@ -44,7 +44,7 @@ Using full training set.
 
 | Parameter  | Value |
 | ---------- | ----- |
-| Train size | 0.8   |
+| Train:test | 8:2   |
 | Vocab size | 1000  |
 | Epochs     | 10    |
 
@@ -52,7 +52,7 @@ Using full training set.
 
 | Parameter      | Value    |
 | -------------- | -------- |
-| Train size     | 0.6      |
+| Train:dev:test | 6:2:2    |
 | Batch size     | 64       |
 | Learning rate  | 2e-5     |
 | Weight decay   | 0.01     |
@@ -63,7 +63,7 @@ Using full training set.
 
 | Parameter      | Value    |
 | -------------- | -------- |
-| Train size     | 0.6      |
+| Train:dev:test | 6:2:2    |
 | Batch size     | 32       |
 | Learning rate  | 1e-5     |
 | Weight decay   | 0.01     |
