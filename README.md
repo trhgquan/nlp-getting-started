@@ -81,7 +81,7 @@ Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs
   <tr>
     <td><a href="https://huggingface.co/albert-large-v2">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
+    <td>0.81520</td>
   </tr>
   <tr>
     <td rowspan="2">BART</td>
@@ -160,7 +160,7 @@ Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs
   <tr>
     <td><a href="https://huggingface.co/xlm-roberta-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
+    <td>0.82500</td>
   </tr>
   <tr>
     <td>XLNet</td>
