@@ -93,6 +93,7 @@ Using full training set.
     <th colspan="2">Model</th>
     <th>Training configurations</th>
     <th>Public F1</th>
+	<th>Notes</th>
   </tr>
 </thead>
 <tbody>
@@ -101,133 +102,157 @@ Using full training set.
     <td><a href="https://huggingface.co/albert-base-v2">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.79528</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/albert-large-v2">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.81520</td>
+	<td></td>
   </tr>
   <tr>
     <td rowspan="4">BART</td>
     <td><a href="https://huggingface.co/facebook/bart-base">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82684</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/facebook/bart-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.83726</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/facebook/bart-large-mnli">large-mnli</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>(todo)</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/facebook/bart-large-cnn">large-cnn</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>(todo)</td>
+	<td></td>
   </tr>
   <tr>
     <td rowspan="4">BERT</td>
     <td><a href="https://huggingface.co/bert-base-uncased">base uncased</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82899</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/bert-large-uncased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>(todo)</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/bert-large-uncased">large uncased</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.83052</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/bert-large-uncased">large cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>(todo)</td>
+	<td></td>
   </tr>
   <tr>
     <td>BERTweet</td>
     <td><a href="https://huggingface.co/vinai/bertweet-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82899</td>
+	<td></td>
   </tr>
   <tr>
     <td>BORT</td>
 	<td><a href="https://huggingface.co/amazon/bort">base</a></td>
 	<td><a href="#LLMS">[2]</a></td>
 	<td>0.74563</td>
+	<td></td>
   </tr>
   <tr>
     <td rowspan="2">DeBERTa v3</td>
     <td><a href="https://huggingface.co/microsoft/deberta-v3-base">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.83205</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/microsoft/deberta-v3-large">large</a></td>
     <td><a href="#too-large-llms">[4]</a></td>
     <td>0.83113</td>
+	<td></td>
   </tr>
   <tr>
     <td rowspan="2">DistilBERT</td>
     <td><a href="https://huggingface.co/distilbert-base-uncased">base uncased</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82439</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/distilbert-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82163</td>
+	<td></td>
   </tr>
   <tr>
     <td rowspan="2">RoBERTa</td>
     <td><a href="https://huggingface.co/roberta-base">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82868</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/roberta-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.84033</td>
+	<td>(best result)</td>
   </tr>
   <tr>
     <td>Twitter RoBERTa Sentiment</td>
     <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest">base latest</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82776</td>
+	<td></td>
   </tr>
   <tr>
     <td>Twitter RoBERTa</td>
     <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m">2021 - 144M</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.83083</td>
+	<td></td>
   </tr>
   <tr>
     <td rowspan="2">XLM-RoBERTa</td>
     <td><a href="https://huggingface.co/xlm-roberta-base">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82439</td>
+	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/xlm-roberta-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82500</td>
+	<td></td>
   </tr>
   <tr>
     <td>XLNet</td>
     <td><a href="https://huggingface.co/xlnet-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82592</td>
+	<td></td>
   </tr>
   <tr>
     <td>BiLSTM Seq2Seq</td>
     <td></td>
     <td><a href="#deep-learning-models">[3]</a></td>
     <td>0.78302</td>
+	<td></td>
   </tr>
 </tbody>
 </table>
