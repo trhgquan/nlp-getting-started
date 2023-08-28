@@ -41,13 +41,34 @@ However there are some exceptions where a specific preprocessing method of the p
 Using full training set.
   
 #### Deep learning models
-Train size = 0.8, vocab size = 1000, training with 10 epochs.
+
+| Parameter  | Value |
+| ---------- | ----- |
+| Train size | 0.8   |
+| Vocab size | 1000  |
+| Epochs     | 10    |
 
 #### LLMs
-Train size = 0.6, batch size 64, learning rate 2e-5, weight decay 0.01, training with 50 epochs, early stopping after 5 epochs.
+
+| Parameter      | Value    |
+| -------------- | -------- |
+| Train size     | 0.6      |
+| Batch size     | 64       |
+| Learning rate  | 2e-5     |
+| Weight decay   | 0.01     |
+| Epochs         | 50       |
+| Early stopping | 5 epochs |
 
 #### Too-large LLMs
-Using the same training configurations with [LLMs](#llms), but batch size reduced to 32.
+
+| Parameter      | Value    |
+| -------------- | -------- |
+| Train size     | 0.6      |
+| Batch size     | 32       |
+| Learning rate  | 1e-5     |
+| Weight decay   | 0.01     |
+| Epochs         | 50       |
+| Early stopping | 5 epochs |
 
 ### Results
 
