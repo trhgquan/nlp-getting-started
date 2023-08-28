@@ -44,7 +44,10 @@ Using full training set.
 Train size = 0.8, vocab size = 1000, training with 10 epochs.
 
 #### LLMs
-Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs, early stopping after 5 epochs.
+Train size = 0.6, batch size 64, learning rate 2e-5, weight decay 0.01, training with 50 epochs, early stopping after 5 epochs.
+
+#### Too-large LLMs
+Using the same training configurations with [LLMs](#llms), but batch size reduced to 32.
 
 ### Results
 
@@ -54,11 +57,11 @@ Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs
 
 #### Statistical models
 
-| Model                         | Training stats             | Public scores |
-| ----------------------------- | -------------------------- | ------------- |
-| SVC + TFIDF + CountVectorizer | [[1]](#statistical-models) | 0.80140       |
-| SVC + TFIDF                   | [[1]](#statistical-models) | 0.80140       |
-| RF + TFIDF + CountVectorizer  | [[1]](#statistical-models) | 0.78792       |
+| Model                         | Training stats             | Public F1 |
+| ----------------------------- | -------------------------- | --------- |
+| SVC + TFIDF + CountVectorizer | [[1]](#statistical-models) | 0.80140   |
+| SVC + TFIDF                   | [[1]](#statistical-models) | 0.80140   |
+| RF + TFIDF + CountVectorizer  | [[1]](#statistical-models) | 0.78792   |
 
 
 #### Deep learning models
@@ -84,7 +87,7 @@ Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs
     <td>0.81520</td>
   </tr>
   <tr>
-    <td rowspan="2">BART</td>
+    <td rowspan="4">BART</td>
     <td><a href="https://huggingface.co/facebook/bart-base">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82684</td>
@@ -93,6 +96,16 @@ Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs
     <td><a href="https://huggingface.co/facebook/bart-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.83726</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/facebook/bart-large-mnli">large-mnli</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/facebook/bart-large-cnn">large-cnn</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
   </tr>
   <tr>
     <td rowspan="2">BERT</td>
@@ -112,10 +125,21 @@ Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs
     <td>0.82899</td>
   </tr>
   <tr>
-    <td>DeBERTa v3</td>
+    <td>BORT</td>
+	<td><a href="https://huggingface.co/amazon/bort">base</a></td>
+	<td><a href="#LLMS">[2]</a></td>
+	<td>0.74563</td>
+  </tr>
+  <tr>
+    <td rowspan="2">DeBERTa v3</td>
     <td><a href="https://huggingface.co/microsoft/deberta-v3-base">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.83205</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/microsoft/deberta-v3-large">large</a></td>
+    <td><a href="#too-large-llms">[4]</a></td>
+    <td>0.83113</td>
   </tr>
   <tr>
     <td rowspan="2">DistilBERT</td>
@@ -126,7 +150,7 @@ Train size = 0.6, learning rate 2e-5, weight decay 0.01, training with 50 epochs
   <tr>
     <td><a href="https://huggingface.co/distilbert-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
+    <td>0.82163</td>
   </tr>
   <tr>
     <td rowspan="2">RoBERTa</td>
