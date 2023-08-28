@@ -129,15 +129,25 @@ Using full training set.
     <td>(todo)</td>
   </tr>
   <tr>
-    <td rowspan="2">BERT</td>
+    <td rowspan="4">BERT</td>
     <td><a href="https://huggingface.co/bert-base-uncased">base uncased</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82899</td>
   </tr>
   <tr>
+    <td><a href="https://huggingface.co/bert-large-uncased">base cased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
+  </tr>
+  <tr>
     <td><a href="https://huggingface.co/bert-large-uncased">large uncased</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.83052</td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/bert-large-uncased">large cased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
   </tr>
   <tr>
     <td>BERTweet</td>
