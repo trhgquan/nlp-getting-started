@@ -163,7 +163,25 @@ Using full training set.
 	<td></td>
   </tr>
   <tr>
-    <td>BERTweet</td>
+    <td rowspan="4">BERTweet</td>
+  	<td><a href="https://huggingface.co/vinai/bertweet-base">base</a></td>
+	<td><a href="#LLMS">[2]</a></td>
+	<td>(todo)</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/vinai/bertweet-covid19-base-uncased">base-uncased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
+	<td></td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/vinai/bertweet-covid19-base-cased">base-cased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
+	<td></td>
+  </tr>
+  <tr>
     <td><a href="https://huggingface.co/vinai/bertweet-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82899</td>
