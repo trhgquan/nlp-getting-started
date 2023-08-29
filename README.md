@@ -234,14 +234,19 @@ Using full training set.
 	<td>(best result)</td>
   </tr>
   <tr>
-    <td>Twitter RoBERTa Sentiment</td>
+    <td rowspan="3">Twitter RoBERTa Sentiment</td>
+    <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment">base</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>(todo)</td>
+	<td></td>
+  </tr>
+  <tr>
     <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest">base latest</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82776</td>
 	<td></td>
   </tr>
   <tr>
-    <td>Twitter RoBERTa</td>
     <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m">2021 - 144M</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.83083</td>
