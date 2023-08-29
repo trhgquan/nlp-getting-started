@@ -50,25 +50,27 @@ Using full training set.
 
 #### LLMs
 
-| Parameter      | Value    |
-| -------------- | -------- |
-| Train:dev:test | 6:2:2    |
-| Batch size     | 64       |
-| Learning rate  | 2e-5     |
-| Weight decay   | 0.01     |
-| Epochs         | 50       |
-| Early stopping | 5 epochs |
+| Parameter      | Value                                      |
+| -------------- | ------------------------------------------ |
+| Train:dev:test | 6:2:2                                      |
+| Lowercase      | yes (uncased models) and no (cased models) |
+| Batch size     | 64                                         |
+| Learning rate  | 2e-5                                       |
+| Weight decay   | 0.01                                       |
+| Epochs         | 50                                         |
+| Early stopping | 5 epochs                                   |
 
 #### Too-large LLMs
 
-| Parameter      | Value    |
-| -------------- | -------- |
-| Train:dev:test | 6:2:2    |
-| Batch size     | 32       |
-| Learning rate  | 1e-5     |
-| Weight decay   | 0.01     |
-| Epochs         | 50       |
-| Early stopping | 5 epochs |
+| Parameter      | Value                                      |
+| -------------- | ------------------------------------------ |
+| Train:dev:test | 6:2:2                                      |
+| Lowercase      | yes (uncased models) and no (cased models) |
+| Batch size     | 32                                         |
+| Learning rate  | 1e-5                                       |
+| Weight decay   | 0.01                                       |
+| Epochs         | 50                                         |
+| Early stopping | 5 epochs                                   |
 
 ### Results
 
