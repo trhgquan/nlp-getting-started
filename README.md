@@ -143,9 +143,9 @@ Using full training set.
 	<td></td>
   </tr>
   <tr>
-    <td><a href="https://huggingface.co/bert-large-uncased">base cased</a></td>
+    <td><a href="https://huggingface.co/bert-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
+    <td>0.81428</td>
 	<td></td>
   </tr>
   <tr>
@@ -155,9 +155,9 @@ Using full training set.
 	<td></td>
   </tr>
   <tr>
-    <td><a href="https://huggingface.co/bert-large-uncased">large cased</a></td>
+    <td><a href="https://huggingface.co/bert-large-cased">large cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
+    <td>0.82010</td>
 	<td></td>
   </tr>
   <tr>
@@ -197,7 +197,7 @@ Using full training set.
   <tr>
     <td><a href="https://huggingface.co/distilbert-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>0.82163</td>
+    <td>0.81887</td>
 	<td></td>
   </tr>
   <tr>
@@ -244,7 +244,7 @@ Using full training set.
     <td>XLNet</td>
     <td><a href="https://huggingface.co/xlnet-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>0.82592</td>
+    <td>0.81182</td>
 	<td></td>
   </tr>
   <tr>
