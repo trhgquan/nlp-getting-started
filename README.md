@@ -50,27 +50,25 @@ Using full training set.
 
 #### LLMs
 
-| Parameter            | Value                                      |
-| -------------------- | ------------------------------------------ |
-| Train:dev:test ratio | 6:2:2                                      |
-| Lowercase            | yes (uncased models) and no (cased models) |
-| Batch size           | 64                                         |
-| Learning rate        | 2e-5                                       |
-| Weight decay         | 0.01                                       |
-| Epochs               | 50                                         |
-| Early stopping       | 5 epochs                                   |
+| Parameter            | Value    |
+| -------------------- | -------- |
+| Train:dev:test ratio | 6:2:2    |
+| Batch size           | 64       |
+| Learning rate        | 2e-5     |
+| Weight decay         | 0.01     |
+| Epochs               | 50       |
+| Early stopping       | 5 epochs |
 
 #### Too-large LLMs
 
-| Parameter            | Value                                      |
-| -------------------- | ------------------------------------------ |
-| Train:dev:test ratio | 6:2:2                                      |
-| Lowercase            | yes (uncased models) and no (cased models) |
-| Batch size           | 32                                         |
-| Learning rate        | 1e-5                                       |
-| Weight decay         | 0.01                                       |
-| Epochs               | 50                                         |
-| Early stopping       | 5 epochs                                   |
+| Parameter            | Value    |
+| -------------------- | -------- |
+| Train:dev:test ratio | 6:2:2    |
+| Batch size           | 32       |
+| Learning rate        | 1e-5     |
+| Weight decay         | 0.01     |
+| Epochs               | 50       |
+| Early stopping       | 5 epochs |
 
 ### Results
 
@@ -147,8 +145,8 @@ Using full training set.
   <tr>
     <td><a href="https://huggingface.co/bert-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>0.81428</td>
-  <td></td>
+    <td>(todo)</td>
+    <td>(redo with lowercased)</td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/bert-large-uncased">large uncased</a></td>
@@ -159,15 +157,15 @@ Using full training set.
   <tr>
     <td><a href="https://huggingface.co/bert-large-cased">large cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>0.82010</td>
-  <td></td>
+    <td>0.82194</td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="4">BERTweet</td>
     <td><a href="https://huggingface.co/vinai/bertweet-base">base</a></td>
-  	<td><a href="#LLMS">[2]</a></td>
-  	<td>0.83726</td>
-  	<td></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.83726</td>
+    <td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/vinai/bertweet-covid19-base-uncased">covid19-base-uncased</a></td>
@@ -205,7 +203,7 @@ Using full training set.
     <td><a href="https://huggingface.co/microsoft/deberta-v3-large">large</a></td>
     <td><a href="#too-large-llms">[4]</a></td>
     <td>0.83113</td>
-  <td></td>
+  <td></td>    
   </tr>
   <tr>
     <td rowspan="2">DistilBERT</td>
@@ -217,8 +215,8 @@ Using full training set.
   <tr>
     <td><a href="https://huggingface.co/distilbert-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>0.81887</td>
-  <td></td>
+    <td>(todo)</td>
+    <td>(redo with lowercased)</td>
   </tr>
   <tr>
     <td rowspan="2">RoBERTa</td>
@@ -231,14 +229,14 @@ Using full training set.
     <td><a href="https://huggingface.co/roberta-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.84033</td>
-  <td>(best result)</td>
+    <td>best result so far</td>
   </tr>
   <tr>
     <td rowspan="3">Twitter RoBERTa Sentiment</td>
     <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.83389</td>
-  	<td rowspan="3"><a href="https://huggingface.co/cardiffnlp">CardiffNLP</a> has a huge list of Twitter pretrained models and these are just 3 of them. Try finetuning others (if you have time).</td>
+    <td rowspan="3"><a href="https://huggingface.co/cardiffnlp">CardiffNLP</a> has a huge list of Twitter pretrained models and these are just 3 of them. Try finetuning others (if you have time).</td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest">base latest</a></td>
@@ -255,20 +253,20 @@ Using full training set.
     <td><a href="https://huggingface.co/xlm-roberta-base">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82439</td>
-  	<td></td>
+    <td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/xlm-roberta-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82500</td>
-  	<td></td>
+    <td></td>
   </tr>
   <tr>
     <td>XLNet</td>
     <td><a href="https://huggingface.co/xlnet-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>0.81182</td>
-  <td></td>
+    <td>(todo)</td>
+    <td>(redo with lowercased)</td>
   </tr>
   <tr>
     <td>BiLSTM Seq2Seq</td>
