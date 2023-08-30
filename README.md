@@ -165,20 +165,20 @@ Using full training set.
   <tr>
     <td rowspan="4">BERTweet</td>
     <td><a href="https://huggingface.co/vinai/bertweet-base">base</a></td>
-  <td><a href="#LLMS">[2]</a></td>
-  <td>(todo)</td>
+  	<td><a href="#LLMS">[2]</a></td>
+  	<td>0.83726</td>
+  	<td></td>
+  </tr>
+  <tr>
+    <td><a href="https://huggingface.co/vinai/bertweet-covid19-base-uncased">covid19-base-uncased</a></td>
+    <td><a href="#LLMS">[2]</a></td>
+    <td>0.84002</td>
   <td></td>
   </tr>
   <tr>
-    <td><a href="https://huggingface.co/vinai/bertweet-covid19-base-uncased">base-uncased</a></td>
+    <td><a href="https://huggingface.co/vinai/bertweet-covid19-base-cased">covid19-base-cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
-  <td></td>
-  </tr>
-  <tr>
-    <td><a href="https://huggingface.co/vinai/bertweet-covid19-base-cased">base-cased</a></td>
-    <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
+    <td>0.82960</td>
   <td></td>
   </tr>
   <tr>
@@ -237,8 +237,8 @@ Using full training set.
     <td rowspan="3">Twitter RoBERTa Sentiment</td>
     <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
-  <td rowspan="3"><a href="https://huggingface.co/cardiffnlp">CardiffNLP</a> has a huge list of Twitter pretrained models and these are just 3 of them. Try finetuning others (if you have time).</td>
+    <td>0.83389</td>
+  	<td rowspan="3"><a href="https://huggingface.co/cardiffnlp">CardiffNLP</a> has a huge list of Twitter pretrained models and these are just 3 of them. Try finetuning others (if you have time).</td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest">base latest</a></td>
@@ -255,13 +255,13 @@ Using full training set.
     <td><a href="https://huggingface.co/xlm-roberta-base">base</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82439</td>
-  <td></td>
+  	<td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/xlm-roberta-large">large</a></td>
     <td><a href="#LLMS">[2]</a></td>
     <td>0.82500</td>
-  <td></td>
+  	<td></td>
   </tr>
   <tr>
     <td>XLNet</td>
