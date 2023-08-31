@@ -145,8 +145,8 @@ Using full training set.
   <tr>
     <td><a href="https://huggingface.co/bert-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
-    <td>(redo with lowercased)</td>
+    <td>0.81060</td>
+    <td></td>
   </tr>
   <tr>
     <td><a href="https://huggingface.co/bert-large-uncased">large uncased</a></td>
@@ -215,8 +215,8 @@ Using full training set.
   <tr>
     <td><a href="https://huggingface.co/distilbert-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
-    <td>(redo with lowercased)</td>
+    <td>0.82163</td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="2">RoBERTa</td>
@@ -265,8 +265,8 @@ Using full training set.
     <td>XLNet</td>
     <td><a href="https://huggingface.co/xlnet-base-cased">base cased</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
-    <td>(redo with lowercased)</td>
+    <td>0.82592</td>
+    <td></td>
   </tr>
   <tr>
     <td>BiLSTM Seq2Seq</td>
