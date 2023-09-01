@@ -132,7 +132,7 @@ Using full training set.
   <tr>
     <td><a href="https://huggingface.co/facebook/bart-large-cnn">large-cnn</a></td>
     <td><a href="#LLMS">[2]</a></td>
-    <td>(todo)</td>
+    <td>0.82347</td>
   <td></td>
   </tr>
   <tr>
