@@ -201,7 +201,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td></td>
     </tr>
     <tr>
-        <td rowspan="2">DeBERTa</td>
+        <td rowspan="3">DeBERTa</td>
         <td><a href="https://huggingface.co/microsoft/deberta-base">base</a></td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.81642</td>
@@ -210,6 +210,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     <tr>
         <td><a href="https://huggingface.co/microsoft/deberta-large">large</a></td>
         <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/microsoft/deberta-xlarge">xlarge</a></td>
+        <td><a href="#llms">[2]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
