@@ -209,7 +209,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
 	<tr>
 		<td><a href="https://huggingface.co/microsoft/deberta-base-mnli">base-mnli</a></td>
-		<td><a href="#too-large-llms">[4]</a></td>
+		<td><a href="#llms">[2]</a></td>
 		<td>0.80661</td>
 		<td></td>
 	</tr>
