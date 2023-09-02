@@ -201,7 +201,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td></td>
     </tr>
     <tr>
-        <td rowspan="3">DeBERTa</td>
+        <td rowspan="2">DeBERTa</td>
         <td><a href="https://huggingface.co/microsoft/deberta-base">base</a></td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.81642</td>
@@ -209,15 +209,9 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
     <tr>
         <td><a href="https://huggingface.co/microsoft/deberta-large">large</a></td>
-        <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td><a href="https://huggingface.co/microsoft/deberta-xlarge">xlarge</a></td>
-        <td><a href="#llms">[2]</a></td>
-        <td>(todo)</td>
-        <td></td>
+		<td><a href="#too-large-llms">[4]</a></td>
+        <td>0.84308</td>
+        <td>best result so far</td>
     </tr>
     <tr>
     <td rowspan="4">DeBERTa v3</td>
@@ -241,7 +235,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     <tr>
         <td><a href="https://huggingface.co/microsoft/deberta-v3-large">large</a></td>
         <td><a href="#too-large-llms">[4]</a></td>
-        <td>0.83113</td>
+        <td>0.82745</td>
         <td></td>
     </tr>
     <tr>
@@ -275,7 +269,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="https://huggingface.co/roberta-large">large</a></td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.84033</td>
-        <td>best result so far</td>
+        <td></td>
     </tr>
     <tr>
         <td rowspan="3">Twitter RoBERTa Sentiment</td>
