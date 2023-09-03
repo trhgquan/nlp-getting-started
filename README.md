@@ -184,18 +184,18 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82194</td>
     </tr>
-	<tr>
-		<td><a href="https://huggingface.co/bert-large-uncased-whole-word-masking">large uncased whole word masking</a></td>
-		<td>335M (huggingface)</td>
-		<td><a href="#LLMS">[2]</a></td>
-		<td>0.82255</td>
-	</tr>
-	<tr>
-		<td><a href="https://huggingface.co/bert-large-cased-whole-word-masking">large cased whole word masking</a></td>
-		<td>336M (huggingface)</td>
-		<td><a href="#LLMS">[2]</a></td>
-		<td>(todo)</td>
-	</tr>
+    <tr>
+        <td><a href="https://huggingface.co/bert-large-uncased-whole-word-masking">large uncased whole word masking</a></td>
+        <td>335M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>0.82255</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/bert-large-cased-whole-word-masking">large cased whole word masking</a></td>
+        <td>336M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+    </tr>
     <tr>
         <td rowspan="4"><a href="https://arxiv.org/abs/2005.10200">BERTweet</a></td>
         <td><a href="https://huggingface.co/vinai/bertweet-base">base</a></td>
@@ -354,7 +354,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="#LLMS">[2]</a></td>
         <td>(todo)</td>
     </tr>
-	<tr>
+    <tr>
         <td><a href="https://huggingface.co/roberta-large-openai-detector">large-openai-detector</a></td>
         <td>355M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
@@ -383,35 +383,34 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     <tr>
         <td rowspan="2"><a href="https://arxiv.org/abs/1911.02116">XLM-RoBERTa</a></td>
         <td><a href="https://huggingface.co/xlm-roberta-base">base</a></td>
-		<td>270M (huggingface)</td>
+        <td>270M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82439</td>
         <td>View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/xlm-roberta-large">large</a></td>
-		<td>550M (huggingface)</td>
+        <td>550M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82500</td>
-        <td></td>
     </tr>
     <tr>
         <td rowspan="2"><a href="https://arxiv.org/abs/1906.08237">XLNet</a></td>
         <td><a href="https://huggingface.co/xlnet-base-cased">base cased</a></td>
-		<td>110M (huggingface)</td>
+        <td>110M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82592</td>
-		<td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
+        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
-	<tr>
-		<td><a href="https://huggingface.co/xlnet-large-cased">large cased</a></td>
-		<td>340M (huggingface)</td>
-		<td><a href="#LLMS">[2]</a></td>
-		<td>(todo)</td>
+    <tr>
+        <td><a href="https://huggingface.co/xlnet-large-cased">large cased</a></td>
+        <td>340M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
     <tr>
         <td>BiLSTM Seq2Seq</td>
         <td>N/A</td>
-		<td></td>
+        <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.78302</td>
         <td></td>
