@@ -107,9 +107,23 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </thead>
 <tbody>
     <tr>
-        <td rowspan="2"><a href="https://arxiv.org/abs/1909.11942">AlBERT v2</a></td>
+        <td rowspan="2"><a href="https://arxiv.org/abs/1909.11942">AlBERT-v1</a></td>
+        <td><a href="https://huggingface.co/albert-base-v1">base</a></td>
+        <td>11M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>0.80907</td>
+        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/albert-base-v1">large</a></td>
+        <td>17M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>0.80416</td>
+    </tr>
+    <tr>
+        <td rowspan="2"><a href="https://arxiv.org/abs/1909.11942">AlBERT-v2</a></td>
         <td><a href="https://huggingface.co/albert-base-v2">base</a></td>
-        <td>12M (huggingface)</td>
+        <td>11M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.79528</td>
         <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
@@ -142,7 +156,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
     <tr>
         <td><a href="https://huggingface.co/facebook/bart-large-cnn">large-cnn</a></td>
-        <td>400 (facebook-research)</td>
+        <td>400M (facebook-research)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82347</td>
     </tr>
