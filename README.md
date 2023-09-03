@@ -407,6 +407,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>340M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>(todo)</td>
+	</tr>
     <tr>
         <td>BiLSTM Seq2Seq</td>
         <td>N/A</td>
