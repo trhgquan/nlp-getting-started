@@ -107,29 +107,27 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </thead>
 <tbody>
     <tr>
-        <td rowspan="2"><a href="https://arxiv.org/abs/1909.11942">AlBERT-v1</a></td>
-        <td><a href="https://huggingface.co/albert-base-v1">base</a></td>
+        <td rowspan="4"><a href="https://arxiv.org/abs/1909.11942">ALBERT</a></td>
+        <td><a href="https://huggingface.co/albert-base-v1">base-v1</a></td>
         <td>11M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.80907</td>
-        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
+        <td rowspan="4">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
     </tr>
     <tr>
-        <td><a href="https://huggingface.co/albert-base-v1">large</a></td>
+        <td><a href="https://huggingface.co/albert-large-v1">large-v1</a></td>
         <td>17M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.80416</td>
     </tr>
     <tr>
-        <td rowspan="2"><a href="https://arxiv.org/abs/1909.11942">AlBERT-v2</a></td>
-        <td><a href="https://huggingface.co/albert-base-v2">base</a></td>
+        <td><a href="https://huggingface.co/albert-base-v2">base-v2</a></td>
         <td>11M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.79528</td>
-        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
     </tr>
     <tr>
-        <td><a href="https://huggingface.co/albert-large-v2">large</a></td>
+        <td><a href="https://huggingface.co/albert-large-v2">large-v2</a></td>
         <td>17M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.81520</td>
@@ -247,12 +245,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.83757</td>
     </tr>
     <tr>
-        <td rowspan="4"><a href="https://arxiv.org/abs/2111.09543">DeBERTa v3</a></td>
+        <td rowspan="5"><a href="https://arxiv.org/abs/2111.09543">DeBERTa v3</a></td>
         <td><a href="https://huggingface.co/microsoft/deberta-v3-xsmall">xsmall</a></td>
         <td>22M (microsoft)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.80815</td>
-        <td rowspan="4">View list of parameters by microsoft <a href="https://github.com/microsoft/DeBERTa?tab=readme-ov-file#pre-trained-models">here</a></td>
+        <td rowspan="5">View list of parameters by microsoft <a href="https://github.com/microsoft/DeBERTa?tab=readme-ov-file#pre-trained-models">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/microsoft/deberta-v3-small">small</a></td>
@@ -273,12 +271,10 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.82745</td>
     </tr>
     <tr>
-        <td><a href="https://arxiv.org/abs/2111.09543">mDeBERTa-V3</a></td>
-        <td><a href="https://huggingface.co/microsoft/mdeberta-v3-base">base</a></td>
+        <td><a href="https://huggingface.co/microsoft/mdeberta-v3-base">mdeberta-v3-base</a></td>
         <td>86M (microsoft)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82929</td>
-        <td>View list of parameters by microsoft <a href="https://github.com/microsoft/DeBERTa?tab=readme-ov-file#pre-trained-models">here</a></td>
     </tr>
     <tr>
         <td rowspan="2"><a href="https://arxiv.org/abs/1910.01108">DistilBERT</a></td>
