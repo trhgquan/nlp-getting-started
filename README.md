@@ -386,7 +386,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>270M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82439</td>
-        <td>View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
+        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/xlm-roberta-large">large</a></td>
