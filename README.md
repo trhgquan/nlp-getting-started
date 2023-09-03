@@ -184,8 +184,20 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82194</td>
     </tr>
+	<tr>
+		<td><a href="https://huggingface.co/bert-large-uncased-whole-word-masking">large uncased whole word masking</a></td>
+		<td>335M (huggingface)</td>
+		<td><a href="#LLMS">[2]</a></td>
+		<td>0.82255</td>
+	</tr>
+	<tr>
+		<td><a href="https://huggingface.co/bert-large-cased-whole-word-masking">large cased whole word masking</a></td>
+		<td>336M (huggingface)</td>
+		<td><a href="#LLMS">[2]</a></td>
+		<td>(todo)</td>
+	</tr>
     <tr>
-        <td rowspan="4"><a href="https://aclanthology.org/2020.emnlp-demos.2/">BERTweet</a></td>
+        <td rowspan="4"><a href="https://arxiv.org/abs/2005.10200">BERTweet</a></td>
         <td><a href="https://huggingface.co/vinai/bertweet-base">base</a></td>
         <td>135M (vinai)</td>
         <td><a href="#LLMS">[2]</a></td>
@@ -311,18 +323,42 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.83726</td>
     </tr>
     <tr>
-        <td rowspan="2"><a href="https://arxiv.org/abs/1907.11692">RoBERTa</a></td>
+        <td rowspan="5"><a href="https://arxiv.org/abs/1907.11692">RoBERTa</a></td>
         <td><a href="https://huggingface.co/roberta-base">base</a></td>
         <td>125M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82868</td>
-        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
+        <td rowspan="5">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/roberta-large">large</a></td>
         <td>335M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.84033</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/roberta-large">large</a></td>
+        <td>355M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>0.84033</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/distilroberta-base">distilroberta-large</a></td>
+        <td>82M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/roberta-base-openai-detector">base-openai-detector</a></td>
+        <td>125M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+    </tr>
+	<tr>
+        <td><a href="https://huggingface.co/roberta-large-openai-detector">large-openai-detector</a></td>
+        <td>355M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
     </tr>
     <tr>
         <td rowspan="3"><a href="https://arxiv.org/abs/2010.12421">Twitter RoBERTa Sentiment</a></td>
@@ -360,13 +396,18 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td></td>
     </tr>
     <tr>
-        <td><a href="https://arxiv.org/abs/1906.08237">XLNet</a></td>
+        <td rowspan="2"><a href="https://arxiv.org/abs/1906.08237">XLNet</a></td>
         <td><a href="https://huggingface.co/xlnet-base-cased">base cased</a></td>
 		<td>110M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82592</td>
-		<td>View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
+		<td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
+	<tr>
+		<td><a href="https://huggingface.co/xlnet-large-cased">large cased</a></td>
+		<td>340M (huggingface)</td>
+		<td><a href="#LLMS">[2]</a></td>
+		<td>(todo)</td>
     <tr>
         <td>BiLSTM Seq2Seq</td>
         <td>N/A</td>
