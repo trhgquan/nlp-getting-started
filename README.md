@@ -98,7 +98,8 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 <table>
 <thead>
     <tr>
-        <th colspan="2">Model</th>
+        <th colspan="2">Model (with paper link)</th>
+        <th>Pretrain parameters</th>
         <th>Training configurations</th>
         <th>Public F1</th>
         <th>Notes</th>
@@ -106,223 +107,260 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </thead>
 <tbody>
     <tr>
-        <td rowspan="2">AlBERT v2</td>
+        <td rowspan="2"><a href="https://arxiv.org/abs/1909.11942">AlBERT v2</a></td>
         <td><a href="https://huggingface.co/albert-base-v2">base</a></td>
+        <td>12M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.79528</td>
-        <td></td>
+        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/albert-large-v2">large</a></td>
+        <td>17M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.81520</td>
-        <td></td>
     </tr>
     <tr>
-        <td rowspan="4">BART</td>
+        <td rowspan="4"><a href="https://arxiv.org/abs/1910.13461">BART</a></td>
         <td><a href="https://huggingface.co/facebook/bart-base">base</a></td>
+        <td>140M (facebook-research)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82684</td>
-        <td></td>
+        <td rowspan="4">View list of parameters by facebook-research <a href="https://github.com/facebookresearch/fairseq/blob/main/examples/bart/README.md">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/facebook/bart-large">large</a></td>
+        <td>400M (facebook-research)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.83726</td>
-        <td></td>
-    </tr>
+      </tr>
     <tr>
         <td><a href="https://huggingface.co/facebook/bart-large-mnli">large-mnli</a></td>
+        <td>400M (facebook-research)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.83450</td>
-        <td></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/facebook/bart-large-cnn">large-cnn</a></td>
+        <td>400 (facebook-research)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82347</td>
-        <td></td>
     </tr>
     <tr>
-        <td rowspan="4">BERT</td>
+        <td rowspan="4"><a href="https://arxiv.org/abs/1810.04805">BERT</a></td>
         <td><a href="https://huggingface.co/bert-base-uncased">base uncased</a></td>
+        <td>110M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82899</td>
-        <td></td>
+        <td rowspan="4">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/bert-base-cased">base cased</a></td>
+        <td>110M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.81060</td>
-        <td></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/bert-large-uncased">large uncased</a></td>
+        <td>340M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.83052</td>
-        <td></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/bert-large-cased">large cased</a></td>
+        <td>340M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82194</td>
-        <td></td>
     </tr>
     <tr>
-        <td rowspan="4">BERTweet</td>
+        <td rowspan="4"><a href="https://aclanthology.org/2020.emnlp-demos.2/">BERTweet</a></td>
         <td><a href="https://huggingface.co/vinai/bertweet-base">base</a></td>
+        <td>135M (vinai)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.83726</td>
-        <td></td>
+        <td rowspan="4">View list of parameters by vinai <a href="https://github.com/VinAIResearch/BERTweet?tab=readme-ov-file#-pre-trained-models">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/vinai/bertweet-covid19-base-uncased">covid19-base-uncased</a></td>
+        <td>135M (vinai)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.84002</td>
-        <td></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/vinai/bertweet-covid19-base-cased">covid19-base-cased</a></td>
+        <td>135M (vinai)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82960</td>
-        <td></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/vinai/bertweet-large">large</a></td>
+        <td>335M (vinai)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82899</td>
-        <td></td>
     </tr>
     <tr>
-        <td>BORT</td>
+        <td><a href="https://arxiv.org/abs/2010.10499">BORT</a></td>
         <td><a href="https://huggingface.co/amazon/bort">base</a></td>
+        <td>56.1M (amazon)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.74563</td>
-        <td></td>
+        <td>Parameters from the original paper</td>
     </tr>
     <tr>
-        <td rowspan="4">DeBERTa</td>
+        <td rowspan="4"><a href="https://arxiv.org/abs/2006.03654">DeBERTa</a></td>
         <td><a href="https://huggingface.co/microsoft/deberta-base">base</a></td>
+        <td>100M (microsoft)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.81642</td>
-        <td></td>
+        <td rowspan="4">View list of parameters by microsoft <a href="https://github.com/microsoft/DeBERTa?tab=readme-ov-file#pre-trained-models">here</a></td>
     </tr>
-	<tr>
-		<td><a href="https://huggingface.co/microsoft/deberta-base-mnli">base-mnli</a></td>
-		<td><a href="#llms">[2]</a></td>
-		<td>0.80661</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td><a href="https://huggingface.co/microsoft/deberta-base-mnli">base-mnli</a></td>
+        <td>86M (microsoft)</td>
+        <td><a href="#llms">[2]</a></td>
+        <td>0.80661</td>
+    </tr>
     <tr>
         <td><a href="https://huggingface.co/microsoft/deberta-large">large</a></td>
-		<td><a href="#too-large-llms">[4]</a></td>
-        <td>0.84308</td>
-        <td>best result so far</td>
+        <td>350M (microsoft)</td>
+        <td><a href="#too-large-llms">[4]</a></td>
+        <td><b>0.84308</b></td>
     </tr>
-	<tr>
-		<td><a href="https://huggingface.co/microsoft/deberta-large-mnli">large-mnli</a></td>
-		<td><a href="#too-large-llms">[4]</a></td>
-		<td>0.83757</td>
-		<td></td>
-	</tr>
     <tr>
-    	<td rowspan="4">DeBERTa v3</td>
+        <td><a href="https://huggingface.co/microsoft/deberta-large-mnli">large-mnli</a></td>
+        <td>350M (microsoft)</td>
+        <td><a href="#too-large-llms">[4]</a></td>
+        <td>0.83757</td>
+    </tr>
+    <tr>
+        <td rowspan="4"><a href="https://arxiv.org/abs/2111.09543">DeBERTa v3</a></td>
         <td><a href="https://huggingface.co/microsoft/deberta-v3-xsmall">xsmall</a></td>
+        <td>22M (microsoft)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.80815</td>
-        <td></td>
+        <td rowspan="4">View list of parameters by microsoft <a href="https://github.com/microsoft/DeBERTa?tab=readme-ov-file#pre-trained-models">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/microsoft/deberta-v3-small">small</a></td>
+        <td>44M (microsoft)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82408</td>
-        <td></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/microsoft/deberta-v3-base">base</a></td>
+        <td>86M (microsoft)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.83205</td>
-        <td></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/microsoft/deberta-v3-large">large</a></td>
+        <td>304M (microsoft)</td>
         <td><a href="#too-large-llms">[4]</a></td>
         <td>0.82745</td>
-        <td></td>
     </tr>
     <tr>
-        <td>mDeBERTa-V3</td>
+        <td><a href="https://arxiv.org/abs/2111.09543">mDeBERTa-V3</a></td>
         <td><a href="https://huggingface.co/microsoft/mdeberta-v3-base">base</a></td>
+        <td>86M (microsoft)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82929</td>
-        <td></td>
+        <td>View list of parameters by microsoft <a href="https://github.com/microsoft/DeBERTa?tab=readme-ov-file#pre-trained-models">here</a></td>
     </tr>
     <tr>
-        <td rowspan="2">DistilBERT</td>
+        <td rowspan="2"><a href="https://arxiv.org/abs/1910.01108">DistilBERT</a></td>
         <td><a href="https://huggingface.co/distilbert-base-uncased">base uncased</a></td>
+        <td>66M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82439</td>
-        <td></td>
+        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/distilbert-base-cased">base cased</a></td>
+        <td>65M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82163</td>
-        <td></td>
     </tr>
     <tr>
-        <td rowspan="2">RoBERTa</td>
+        <td rowspan="3"><a href="https://arxiv.org/abs/2003.10555">ELECTRA (discriminator)</a></td>
+        <td><a href="https://huggingface.co/google/electra-small-discriminator">small</a></td>
+        <td>14M (google)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+        <td rowspan="3">View list of parameters by google <a href="https://github.com/google-research/electra">here</a></td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/google/electra-base-discriminator">base</a></td>
+        <td>110M (google)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/google/electra-large-discriminator">large</a></td>
+        <td>335M (google)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>0.83726</td>
+    </tr>
+    <tr>
+        <td rowspan="2"><a href="https://arxiv.org/abs/1907.11692">RoBERTa</a></td>
         <td><a href="https://huggingface.co/roberta-base">base</a></td>
+        <td>125M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82868</td>
-        <td></td>
+        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/roberta-large">large</a></td>
+        <td>335M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.84033</td>
-        <td></td>
     </tr>
     <tr>
-        <td rowspan="3">Twitter RoBERTa Sentiment</td>
+        <td rowspan="3"><a href="https://arxiv.org/abs/2010.12421">Twitter RoBERTa Sentiment</a></td>
         <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment">base</a></td>
+        <td>N/A</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.83389</td>
         <td rowspan="3"><a href="https://huggingface.co/cardiffnlp">CardiffNLP</a> has a huge list of Twitter pretrained models and these are just 3 of them. Try finetuning others (if you have time).</td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest">base latest</a></td>
+        <td>N/A</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82776</td>
     </tr>
     <tr>
-        <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m">base 2021 124M</a></td>
+        <td><a href="https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m">base 2021</a></td>
+        <td>124M (cardiffnlp)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.83083</td>
     </tr>
     <tr>
-        <td rowspan="2">XLM-RoBERTa</td>
+        <td rowspan="2"><a href="https://arxiv.org/abs/1911.02116">XLM-RoBERTa</a></td>
         <td><a href="https://huggingface.co/xlm-roberta-base">base</a></td>
+		<td>270M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82439</td>
-        <td></td>
+        <td>View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/xlm-roberta-large">large</a></td>
+		<td>550M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82500</td>
         <td></td>
     </tr>
     <tr>
-        <td>XLNet</td>
+        <td><a href="https://arxiv.org/abs/1906.08237">XLNet</a></td>
         <td><a href="https://huggingface.co/xlnet-base-cased">base cased</a></td>
+		<td>110M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82592</td>
-        <td></td>
+		<td>View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td>BiLSTM Seq2Seq</td>
-        <td></td>
+        <td>N/A</td>
+		<td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.78302</td>
         <td></td>
