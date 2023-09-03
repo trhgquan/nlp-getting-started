@@ -323,12 +323,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.83726</td>
     </tr>
     <tr>
-        <td rowspan="5"><a href="https://arxiv.org/abs/1907.11692">RoBERTa</a></td>
+        <td rowspan="6"><a href="https://arxiv.org/abs/1907.11692">RoBERTa</a></td>
         <td><a href="https://huggingface.co/roberta-base">base</a></td>
         <td>125M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82868</td>
-        <td rowspan="5">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
+        <td rowspan="6">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/roberta-large">large</a></td>
