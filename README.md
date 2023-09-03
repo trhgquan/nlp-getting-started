@@ -285,14 +285,14 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="https://huggingface.co/google/electra-small-discriminator">small</a></td>
         <td>14M (google)</td>
         <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td>0.81887</td>
         <td rowspan="3">View list of parameters by google <a href="https://github.com/google-research/electra">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/google/electra-base-discriminator">base</a></td>
         <td>110M (google)</td>
         <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td>0.82776</td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/google/electra-large-discriminator">large</a></td>
