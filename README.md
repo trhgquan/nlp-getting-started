@@ -112,7 +112,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>11M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.80907</td>
-        <td rowspan="4">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
+        <td rowspan="4">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/albert-large-v1">large-v1</a></td>
@@ -159,12 +159,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.82347</td>
     </tr>
     <tr>
-        <td rowspan="4"><a href="https://arxiv.org/abs/1810.04805">BERT</a></td>
+        <td rowspan="6"><a href="https://arxiv.org/abs/1810.04805">BERT</a></td>
         <td><a href="https://huggingface.co/bert-base-uncased">base uncased</a></td>
         <td>110M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82899</td>
-        <td rowspan="4">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
+        <td rowspan="6">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/bert-base-cased">base cased</a></td>
@@ -294,7 +294,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>66M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82439</td>
-        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v2.9.1/pretrained_models.html">here</a></td>
+        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/distilbert-base-cased">base cased</a></td>
