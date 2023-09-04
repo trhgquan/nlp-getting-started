@@ -107,7 +107,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </thead>
 <tbody>
     <tr>
-        <td rowspan="4"><a href="https://arxiv.org/abs/1909.11942">ALBERT</a></td>
+        <td rowspan="8"><a href="https://arxiv.org/abs/1909.11942">ALBERT</a></td>
         <td><a href="https://huggingface.co/albert-base-v1">base-v1</a></td>
         <td>11M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
@@ -121,6 +121,18 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.80416</td>
     </tr>
     <tr>
+        <td><a href="https://huggingface.co/albert-xlarge-v1">xlarge-v1</a></td>
+        <td>58M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/albert-xxlarge-v1">xxlarge-v1</a></td>
+        <td>223M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+    </tr>
+    <tr>
         <td><a href="https://huggingface.co/albert-base-v2">base-v2</a></td>
         <td>11M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
@@ -131,6 +143,18 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>17M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.81520</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/albert-xlarge-v2">xlarge-v2</a></td>
+        <td>58M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/albert-xxlarge-v2">xxlarge-v2</a></td>
+        <td>223M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
     </tr>
     <tr>
         <td rowspan="4"><a href="https://arxiv.org/abs/1910.13461">BART</a></td>
@@ -301,12 +325,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.82929</td>
     </tr>
     <tr>
-        <td rowspan="2"><a href="https://arxiv.org/abs/1910.01108">DistilBERT</a></td>
+        <td rowspan="3"><a href="https://arxiv.org/abs/1910.01108">DistilBERT</a></td>
         <td><a href="https://huggingface.co/distilbert-base-uncased">base uncased</a></td>
         <td>66M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82439</td>
-        <td rowspan="2">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
+        <td rowspan="3">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/distilbert-base-cased">base cased</a></td>
@@ -314,6 +338,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82163</td>
     </tr>
+	<tr>
+		<td><a href="https://huggingface.co/distilbert-base-multilingual-cased">multilingual cased</a></td>
+		<td>134M (huggingface)</td>
+		<td><a href="#LLMS">[2]</a></td>
+		<td>(todo)</td>
+	</tr>
     <tr>
         <td rowspan="3"><a href="https://arxiv.org/abs/2003.10555">ELECTRA (discriminator)</a></td>
         <td><a href="https://huggingface.co/google/electra-small-discriminator">small</a></td>
