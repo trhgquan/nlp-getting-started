@@ -159,12 +159,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.82347</td>
     </tr>
     <tr>
-        <td rowspan="6"><a href="https://arxiv.org/abs/1810.04805">BERT</a></td>
+        <td rowspan="8"><a href="https://arxiv.org/abs/1810.04805">BERT</a></td>
         <td><a href="https://huggingface.co/bert-base-uncased">base uncased</a></td>
         <td>110M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82899</td>
-        <td rowspan="6">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
+        <td rowspan="8">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/bert-base-cased">base cased</a></td>
@@ -194,8 +194,20 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="https://huggingface.co/bert-large-cased-whole-word-masking">large cased whole word masking</a></td>
         <td>336M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td>0.81244</td>
     </tr>
+	<tr>
+	    <td><a href="https://huggingface.co/bert-base-multilingual-uncased">multilingual uncased</a></td>
+		<td>168M (huggingface)</td>
+		<td><a href="#LLMS">[2]</a></td>
+		<td>0.81887</td>
+	</tr>
+	<tr>
+	    <td><a href="https://huggingface.co/bert-base-multilingual-cased">multilingual cased</a></td>
+		<td>179M (huggingface)</td>
+		<td><a href="#LLMS">[2]</a></td>
+		<td>0.81918</td>
+	</tr>
     <tr>
         <td rowspan="4"><a href="https://arxiv.org/abs/2005.10200">BERTweet</a></td>
         <td><a href="https://huggingface.co/vinai/bertweet-base">base</a></td>
@@ -346,19 +358,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="https://huggingface.co/distilroberta-base">distilroberta-large</a></td>
         <td>82M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
-    </tr>
-    <tr>
-        <td><a href="https://huggingface.co/roberta-base-openai-detector">base-openai-detector</a></td>
-        <td>125M (huggingface)</td>
-        <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
-    </tr>
-    <tr>
-        <td><a href="https://huggingface.co/roberta-large-openai-detector">large-openai-detector</a></td>
-        <td>355M (huggingface)</td>
-        <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td>0.82960</td>
     </tr>
     <tr>
         <td rowspan="3"><a href="https://arxiv.org/abs/2010.12421">Twitter RoBERTa Sentiment</a></td>
@@ -405,8 +405,8 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     <tr>
         <td><a href="https://huggingface.co/xlnet-large-cased">large cased</a></td>
         <td>340M (huggingface)</td>
-        <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td><a href="#too-large-llms">[4]</a></td>
+        <td>0.81612</td>
 	</tr>
     <tr>
         <td>BiLSTM Seq2Seq</td>
