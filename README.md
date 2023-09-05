@@ -42,15 +42,15 @@ Using full training set.
 
 #### Deep learning models
 
-| Parameter  | Value |
-| ---------- | ----- |
-| Train:test | 8:2   |
-| Vocab size | 1000  |
-| Epochs     | 10    |
+| Hyperparameter  | Value |
+| --------------- | ----- |
+| Train:test      | 8:2   |
+| Vocab size      | 1000  |
+| Epochs          | 10    |
 
 #### LLMs
 
-| Parameter            | Value    |
+| Hyperparameter       | Value    |
 | -------------------- | -------- |
 | Train:dev:test ratio | 6:2:2    |
 | Batch size           | 64       |
@@ -61,7 +61,9 @@ Using full training set.
 
 #### Too-large LLMs
 
-| Parameter            | Value    |
+Some large LLMs cannot be trained with [hyperparameters in the LLMs section](#LLMs). In order to fit those models to Kaggle GPU's RAM, I reduced the batch size and learning rate to following values:
+
+| Hyperparameter       | Value    |
 | -------------------- | -------- |
 | Train:dev:test ratio | 6:2:2    |
 | Batch size           | 32       |
@@ -69,6 +71,8 @@ Using full training set.
 | Weight decay         | 0.01     |
 | Epochs               | 50       |
 | Early stopping       | 5 epochs |
+
+All remaining hyperparametes stay the same as [LLMs](#LLMs).
 
 ### Results
 
@@ -86,12 +90,61 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 
 #### Statistical models
 
-| Model                         | Training stats             | Public F1 |
-| ----------------------------- | -------------------------- | --------- |
-| SVC + TFIDF + CountVectorizer | [[1]](#statistical-models) | 0.80140   |
-| SVC + TFIDF                   | [[1]](#statistical-models) | 0.80140   |
-| RF + TFIDF + CountVectorizer  | [[1]](#statistical-models) | 0.78792   |
-
+<table>
+<thead>
+	<tr>
+		<th colspan="2">Model (Vectorizer)</th>
+		<th>Training configurations</th>
+		<th>Public F1</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td rowspan="2">SVC</td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>0.80140</td>
+	</tr>
+	<tr>
+		<td>TFIDF + CountVectorizer</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>0.80140</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Random Forest</td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>(todo)</td>
+	</tr>
+	<tr>
+		<td>TFIDF + CountVectorizer</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>0.78792</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Decision Tree</td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>(todo)</td>
+	</tr>
+	<tr>
+		<td>TFIDF + CountVectorizer</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>(todo)</td>
+	</tr>
+	<tr>
+		<td rowspan="2">Naive Bayes</td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>(todo)</td>
+	</tr>
+	<tr>
+		<td>TFIDF + CountVectorizer</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>(todo)</td>
+	</tr>
+</tbody>
+</table>
 
 #### Deep learning models
 
@@ -389,6 +442,26 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>82M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82960</td>
+    </tr>
+	<tr>
+		<td rowspan="3"><a href="https://arxiv.org/abs/2006.11316">SqueezeBERT</a></td>
+		<td><a href="https://huggingface.co/squeezebert/squeezebert-uncased">uncased</a></td>
+		<td>51M (huggingface)</td>
+		<td><a href="#LLMS">[2]</a></td>
+		<td>(todo)</td>
+		<td rowspan="3">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
+	</tr>
+    <tr>
+        <td><a href="https://huggingface.co/squeezebert/squeezebert-mnli">mnli</a></td>
+        <td>51M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/squeezebert/squeezebert-mnli-headless">mnli-headless</a></td>
+        <td>51M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>(todo)</td>
     </tr>
     <tr>
         <td rowspan="3"><a href="https://arxiv.org/abs/2010.12421">Twitter RoBERTa Sentiment</a></td>
