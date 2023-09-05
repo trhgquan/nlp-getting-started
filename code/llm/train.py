@@ -57,7 +57,7 @@ def main():
         train_df["text"] = train_df["text"].apply(
             lambda x: normalizeTweet(x))
     else:
-        train_df = clean_df(train_df, mode= args.preprocessing_url_mode)
+        train_df = clean_df(train_df, mode=args.preprocessing_url_mode)
 
     df_train, df_remain = train_test_split(
         train_df, test_size=1 - args.train_size, random_state=random_state, stratify=train_df["target"])
@@ -81,7 +81,7 @@ def main():
     )
 
     # Droppiing last batch to fit the training
-    if args.model == "xlnet-base-cased":
+    if args.model == "xlnet-base-cased" or args.model == "xlnet-large-cased":
         dataloader_drop_last = True
     else:
         dataloader_drop_last = False

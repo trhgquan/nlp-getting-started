@@ -123,14 +123,14 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     <tr>
         <td><a href="https://huggingface.co/albert-xlarge-v1">xlarge-v1</a></td>
         <td>58M (huggingface)</td>
-        <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td><a href="#too-large-llms">[4]</a></td>
+        <td>0.81182</td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/albert-xxlarge-v1">xxlarge-v1</a></td>
         <td>223M (huggingface)</td>
-        <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td><a href="#too-large-llms">[4]</a></td>
+        <td>0.78853</td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/albert-base-v2">base-v2</a></td>
@@ -147,14 +147,14 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     <tr>
         <td><a href="https://huggingface.co/albert-xlarge-v2">xlarge-v2</a></td>
         <td>58M (huggingface)</td>
-        <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td><a href="#too-large-llms">[4]</a></td>
+        <td>0.81703</td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/albert-xxlarge-v2">xxlarge-v2</a></td>
         <td>223M (huggingface)</td>
-        <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td><a href="#too-large-llms">[4]</a></td>
+        <td>0.80570</td>
     </tr>
     <tr>
         <td rowspan="4"><a href="https://arxiv.org/abs/1910.13461">BART</a></td>
@@ -220,18 +220,18 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="#LLMS">[2]</a></td>
         <td>0.81244</td>
     </tr>
-	<tr>
-	    <td><a href="https://huggingface.co/bert-base-multilingual-uncased">multilingual uncased</a></td>
-		<td>168M (huggingface)</td>
-		<td><a href="#LLMS">[2]</a></td>
-		<td>0.81887</td>
-	</tr>
-	<tr>
-	    <td><a href="https://huggingface.co/bert-base-multilingual-cased">multilingual cased</a></td>
-		<td>179M (huggingface)</td>
-		<td><a href="#LLMS">[2]</a></td>
-		<td>0.81918</td>
-	</tr>
+    <tr>
+        <td><a href="https://huggingface.co/bert-base-multilingual-uncased">multilingual uncased</a></td>
+        <td>168M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>0.81887</td>
+    </tr>
+    <tr>
+        <td><a href="https://huggingface.co/bert-base-multilingual-cased">multilingual cased</a></td>
+        <td>179M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>0.81918</td>
+    </tr>
     <tr>
         <td rowspan="4"><a href="https://arxiv.org/abs/2005.10200">BERTweet</a></td>
         <td><a href="https://huggingface.co/vinai/bertweet-base">base</a></td>
@@ -338,12 +338,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82163</td>
     </tr>
-	<tr>
-		<td><a href="https://huggingface.co/distilbert-base-multilingual-cased">multilingual cased</a></td>
-		<td>134M (huggingface)</td>
-		<td><a href="#LLMS">[2]</a></td>
-		<td>(todo)</td>
-	</tr>
+    <tr>
+        <td><a href="https://huggingface.co/distilbert-base-multilingual-cased">multilingual cased</a></td>
+        <td>134M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>0.80049</td>
+    </tr>
     <tr>
         <td rowspan="3"><a href="https://arxiv.org/abs/2003.10555">ELECTRA (discriminator)</a></td>
         <td><a href="https://huggingface.co/google/electra-small-discriminator">small</a></td>
@@ -437,7 +437,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>340M (huggingface)</td>
         <td><a href="#too-large-llms">[4]</a></td>
         <td>0.81612</td>
-	</tr>
+    </tr>
     <tr>
         <td>BiLSTM Seq2Seq</td>
         <td>N/A</td>

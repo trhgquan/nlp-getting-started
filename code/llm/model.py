@@ -27,7 +27,8 @@ def create_trainer(**kwargs):
         warmup_steps=kwargs.get("warmup_steps", 500),
         weight_decay=kwargs.get("weight_decay", 0.01),
         metric_for_best_model=kwargs.get("metric_for_best_model", "accuracy"),
-        load_best_model_at_end=kwargs.get("load_best_model_at_end", True)
+        load_best_model_at_end=kwargs.get("load_best_model_at_end", True),
+        dataloader_drop_last=kwargs.get("dataloader_drop_last", False),
     )
 
     glue_metric = evaluate.load("glue", "mnli")
