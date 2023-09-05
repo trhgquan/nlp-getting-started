@@ -133,6 +133,17 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>(todo)</td>
 	</tr>
 	<tr>
+		<td rowspan="2">XGBoost</td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>(todo)</td>
+	</tr>
+	<tr>
+		<td>TFIDF + CountVectorizer</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>(todo)</td>
+	</tr>
+	<tr>
 		<td rowspan="2">Naive Bayes</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
