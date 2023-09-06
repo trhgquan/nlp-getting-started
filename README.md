@@ -114,7 +114,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td rowspan="2">Random Forest</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
-		<td>(todo)</td>
+		<td>0.78792</td>
 	</tr>
 	<tr>
 		<td>TFIDF + CountVectorizer</td>
@@ -130,7 +130,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 	<tr>
 		<td>TFIDF + CountVectorizer</td>
 		<td><a href="#statistical-models">[1]</a></td>
-		<td>(todo)</td>
+		<td>0.71069</td>
 	</tr>
 	<tr>
 		<td rowspan="2">XGBoost</td>
