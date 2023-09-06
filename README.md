@@ -459,20 +459,20 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td><a href="https://huggingface.co/squeezebert/squeezebert-uncased">uncased</a></td>
 		<td>51M (huggingface)</td>
 		<td><a href="#LLMS">[2]</a></td>
-		<td>(todo)</td>
+		<td>0.80324</td>
 		<td rowspan="3">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
 	</tr>
     <tr>
         <td><a href="https://huggingface.co/squeezebert/squeezebert-mnli">mnli</a></td>
         <td>51M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td>0.79987</td>
     </tr>
     <tr>
         <td><a href="https://huggingface.co/squeezebert/squeezebert-mnli-headless">mnli-headless</a></td>
         <td>51M (huggingface)</td>
         <td><a href="#LLMS">[2]</a></td>
-        <td>(todo)</td>
+        <td>0.80416</td>
     </tr>
     <tr>
         <td rowspan="3"><a href="https://arxiv.org/abs/2010.12421">Twitter RoBERTa Sentiment</a></td>
