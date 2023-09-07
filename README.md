@@ -38,7 +38,10 @@ However there are some exceptions where a specific preprocessing method of the p
 ### Training configurations
 
 #### Statistical models
-Using full training set.
+
+- Training data: Using full training set.
+- Hyperparameters: using `sklearn.model_selection.GridSearchCV` to automatically pick best combinations.
+
 
 #### Deep learning models
 
@@ -100,6 +103,13 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 	</tr>
 </thead>
 <tbody>
+	<tr>
+		<td>Logistic Regression</td>
+		<td></td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>(todo)</td>
+	</tr>
 	<tr>
 		<td>SVC</td>
 		<td></td>
