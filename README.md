@@ -104,35 +104,35 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </thead>
 <tbody>
 	<tr>
-		<td>Logistic Regression</td>
+		<td colspan="2">Logistic Regression</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
-		<td>(todo)</td>
+		<td>0.80171</td>
 	</tr>
 	<tr>
-		<td>SVC</td>
+		<td colspan="2">SVC</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80140</td>
 	</tr>
 	<tr>
-		<td>Random Forest</td>
+		<td colspan="2">Random Forest</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.78792</td>
 	</tr>  
 	<tr>
-		<td>Decision Tree</td>
+		<td colspan="2">Decision Tree</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.71069</td>
 	</tr>
 	<tr>
-		<td>XGBoost</td>
+		<td colspan="2">XGBoost</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
