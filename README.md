@@ -93,7 +93,8 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 <table>
 <thead>
 	<tr>
-		<th colspan="2">Model (Vectorizer)</th>
+		<th colspan="2">Model</th>
+		<th>Vectorizer</th>
 		<th>Training configurations</th>
 		<th>Public F1</th>
 	</tr>
