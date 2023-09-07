@@ -100,59 +100,41 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </thead>
 <tbody>
 	<tr>
-		<td rowspan="2">SVC</td>
+		<td>SVC</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80140</td>
 	</tr>
 	<tr>
-		<td>TFIDF + CountVectorizer</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.80140</td>
-	</tr>
-	<tr>
-		<td rowspan="2">Random Forest</td>
+		<td>Random Forest</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.78792</td>
-	</tr>
+	</tr>  
 	<tr>
-		<td>TFIDF + CountVectorizer</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.78792</td>
-	</tr>
-	<tr>
-		<td rowspan="2">Decision Tree</td>
+		<td>Decision Tree</td>
 		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>(todo)</td>
-	</tr>
-	<tr>
-		<td>TFIDF + CountVectorizer</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.71069</td>
 	</tr>
 	<tr>
-		<td rowspan="2">XGBoost</td>
+		<td>XGBoost</td>
 		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>(todo)</td>
-	</tr>
-	<tr>
-		<td>TFIDF + CountVectorizer</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>(todo)</td>
 	</tr>
 	<tr>
 		<td rowspan="2">Naive Bayes</td>
+		<td>MultinomialNB</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
-		<td>(todo)</td>
+		<td>0.80447</td>
 	</tr>
 	<tr>
-		<td>TFIDF + CountVectorizer</td>
+		<td>ComplementNB</td>
+		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
-		<td>(todo)</td>
+		<td>0.79589</td>
 	</tr>
 </tbody>
 </table>
