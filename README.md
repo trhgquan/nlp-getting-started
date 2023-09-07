@@ -101,24 +101,28 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 <tbody>
 	<tr>
 		<td>SVC</td>
+		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80140</td>
 	</tr>
 	<tr>
 		<td>Random Forest</td>
+		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.78792</td>
 	</tr>  
 	<tr>
 		<td>Decision Tree</td>
+		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.71069</td>
 	</tr>
 	<tr>
 		<td>XGBoost</td>
+		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>(todo)</td>
