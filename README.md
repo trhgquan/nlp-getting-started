@@ -111,11 +111,17 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>0.49341</td>         	
 	</tr>
 	<tr>
-		<td>Logistic Regression</td>
-		<td></td>
+		<td rowspan="2">Linear Models</td>
+		<td>LogisticRegression</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80171</td>
+	</tr>
+	<tr>
+		<td>SGDClassifier</td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>0.80386</td>
 	</tr>
 	<tr>
 		<td>SVC</td>
