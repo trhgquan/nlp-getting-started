@@ -104,39 +104,46 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </thead>
 <tbody>
 	<tr>
-		<td colspan="2">Logistic Regression</td>
+		<td>KMean</td>
+		<td></td>
+		<td>TFIDF + SVD</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>0.49341</td>         	
+	</tr>
+	<tr>
+		<td>Logistic Regression</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80171</td>
 	</tr>
 	<tr>
-		<td colspan="2">SVC</td>
+		<td>SVC</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80140</td>
 	</tr>
 	<tr>
-		<td colspan="2">Random Forest</td>
+		<td>Random Forest</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.78792</td>
 	</tr>  
 	<tr>
-		<td colspan="2">Decision Tree</td>
+		<td>Decision Tree</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.71069</td>
 	</tr>
 	<tr>
-		<td colspan="2">XGBoost</td>
+		<td>XGBoost</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
-		<td>(todo)</td>
+		<td>0.74992</td>
 	</tr>
 	<tr>
 		<td rowspan="2">Naive Bayes</td>

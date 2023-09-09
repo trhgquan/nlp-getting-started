@@ -4,6 +4,7 @@ from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import MultinomialNB, ComplementNB
 from sklearn.tree import DecisionTreeClassifier
+from xgboost import XGBClassifier
 
 from argparse import ArgumentParser
 from utils import clean_df
@@ -36,6 +37,8 @@ def main():
         classifier = MultinomialNB
     if args.classifier == "cnb":
         classifier = ComplementNB
+    if args.classifier == "xgb":
+        classifier = XGBClassifier
 
     pipeline = create_pipeline(classifier=classifier)
 
