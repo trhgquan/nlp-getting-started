@@ -112,7 +112,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 	</tr>
 	<tr>
 		<td rowspan="2">Linear Models</td>
-		<td>LogisticRegression</td>
+		<td>Logistic Regression</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80171</td>
@@ -131,17 +131,25 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>0.80140</td>
 	</tr>
 	<tr>
-		<td rowspan="2">Ensemble</td>
 		<td>Random Forest</td>
+		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.78792</td>
 	</tr>
 	<tr>
 		<td>AdaBoost</td>
+		<td>Decision Tree</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.72847</td>
+	</tr>
+	<tr>
+	    <td>Bagging</td>
+		<td>Decision Tree</td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>0.74348</td>
 	</tr>  
 	<tr>
 		<td>Decision Tree</td>
@@ -165,16 +173,23 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 	</tr>
 	<tr>
 		<td rowspan="2">Naive Bayes</td>
-		<td>MultinomialNB</td>
+		<td>Multinomial Naive Bayes</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80447</td>
 	</tr>
 	<tr>
-		<td>ComplementNB</td>
+		<td>Complement Naive Bayes</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.79589</td>
+	</tr>
+	<tr>
+		<td>Multilayer Perceptrons</td>
+		<td></td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>0.75911</td>
 	</tr>
 </tbody>
 </table>
