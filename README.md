@@ -106,9 +106,9 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 	<tr>
 		<td>KMean</td>
 		<td></td>
-		<td>TFIDF + SVD</td>
+		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.49341</td>         	
+		<td>0.50658</td>         	
 	</tr>
 	<tr>
 		<td rowspan="2">Linear Models</td>
@@ -118,24 +118,30 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>0.80171</td>
 	</tr>
 	<tr>
-		<td>SGDClassifier</td>
+		<td>Stochastic Gradient Descent</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80386</td>
 	</tr>
 	<tr>
-		<td>SVC</td>
+		<td>Support Vector Machine</td>
 		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.80140</td>
 	</tr>
 	<tr>
+		<td rowspan="2">Ensemble</td>
 		<td>Random Forest</td>
-		<td></td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.78792</td>
+	</tr>
+	<tr>
+		<td>AdaBoost</td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>0.72847</td>
 	</tr>  
 	<tr>
 		<td>Decision Tree</td>
@@ -145,8 +151,14 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>0.71069</td>
 	</tr>
 	<tr>
-		<td>XGBoost</td>
+		<td rowspan="2">Gradient Boosting</td>
 		<td></td>
+		<td>TFIDF</td>
+		<td><a href="#statistical-models">[1]</a></td>
+		<td>0.73889</td>
+	</tr>
+	<tr>
+		<td>XGBoost</td>
 		<td>TFIDF</td>
 		<td><a href="#statistical-models">[1]</a></td>
 		<td>0.74992</td>
