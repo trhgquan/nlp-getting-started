@@ -576,14 +576,14 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 	</tr>
 	<tr>
 		<td>Bidirectional GRU</td>
-		<td>698241</td>
+		<td>698,241</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.77536</td>
 		<td></td>
 	</tr>
 	<tr>
 	    <td>Bidirectional 2-layers stacked GRU</td>
-		<td>725249</td>
+		<td>725,249</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.77566</td>
 		<td></td>	
