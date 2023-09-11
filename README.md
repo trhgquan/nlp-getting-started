@@ -588,5 +588,34 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>0.77566</td>
 		<td></td>	
 	</tr>
+	<tr>
+		<td rowspan="4">RNN + Attention</td>
+		<td>LSTM + Dot</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>LSTM + Concat</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>GRU + Dot</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>GRU + Concat</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
 </tbody>
 </table>
