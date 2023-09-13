@@ -48,8 +48,10 @@ However there are some exceptions where a specific preprocessing method of the p
 | Hyperparameter  | Value |
 | --------------- | ----- |
 | Train:test      | 8:2   |
-| Vocab size      | 10000 |
+| Batch size	  | 64	  |
+| Learning rate	  | 1e-4  |
 | Epochs          | 10    |
+| Vocab size      | 10000 |
 
 #### LLMs
 
