@@ -561,58 +561,74 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
     <tr>
         <td rowspan="4">RNN</td>
-        <td>Bidirectional LSTM</td>
+        <td>1-layer Bidirectional LSTM</td>
         <td>714,369</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77352</td>
         <td></td>
     </tr>
 	<tr>
-		<td>Bidirectional 2-layers stacked LSTM</td>
+		<td>2-layers stacked Bidirectional LSTM</td>
 		<td>751,489</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.78026</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>Bidirectional GRU</td>
+		<td>1-layer Bidirectional GRU</td>
 		<td>698,241</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.77536</td>
 		<td></td>
 	</tr>
 	<tr>
-	    <td>Bidirectional 2-layers stacked GRU</td>
+	    <td>2-layers stacked Bidirectional GRU</td>
 		<td>725,249</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.77566</td>
 		<td></td>	
 	</tr>
 	<tr>
-		<td rowspan="4">RNN + Attention</td>
-		<td>LSTM + Dot</td>
-		<td></td>
+		<td rowspan="2">RNN + Dot Attention</td>
+		<td>1-layer Bidirectional LSTM</td>
+		<td>714,369</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
+		<td>0.78516</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>LSTM + Concat</td>
-		<td></td>
+		<td>1-layer Bidirectional GRU</td>
+		<td>698,241</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
+		<td>0.78516</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>GRU + Dot</td>
-		<td></td>
+		<td rowspan="2">RNN + General Attention</td>
+		<td>1-layer Bidirectional LSTM</td>
+		<td>730,881</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
+		<td>0.77995</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>GRU + Concat</td>
+		<td>1-layer Bidirectional GRU</td>
+		<td>714,753</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>0.77719</td>
 		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="2">RNN + Concatenate Attention</td>
+		<td>1-layer Bidirectional LSTM</td>
+		<td>730,946</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>                            	
+	<tr>
+		<td>1-layer Bidirectional GRU</td>
+		<td>714,818</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>(todo)</td>
 		<td></td>
