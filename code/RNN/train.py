@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 from model import create_encoder, create_model
-from utils import preprocessing
+from utils import clean_df
 from dataset import create_dataset
 
 def main():
@@ -30,7 +30,7 @@ def main():
 
     df = pd.read_csv(args.train)
 
-    df["text"].apply(lambda x: preprocessing(x))
+    df = clean_df(df)
 
     X_train, X_test, y_train, y_test = train_test_split(
         df['text'].tolist(),
