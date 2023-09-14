@@ -59,15 +59,18 @@ def main():
     training_dataset = create_dataset(
         data=X_train, label=y_train, batch_size=batch_size)
 
+    val_dataset = create_dataset(
+        data=X_test, label=y_test, batch_size=batch_size//2)
+
     hist = model.fit(training_dataset, epochs=args.epochs, validation_data=(
-        X_test, y_test), validation_steps=args.validation_steps)
+        val_dataset), validation_steps=args.validation_steps)
 
     print(f"Train loss: {hist['loss']}")
     print(f"Train accuracy: {hist['acc']}")
 
     model.save_weights(args.save)
 
-    test_loss, test_acc = model.evaluate(X_test, y_test)
+    test_loss, test_acc = model.evaluate(val_dataset)
 
     print('Test Loss:', test_loss)
     print('Test Accuracy:', test_acc)

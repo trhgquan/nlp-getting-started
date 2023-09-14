@@ -625,14 +625,14 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>1-layer Bidirectional LSTM</td>
 		<td>730,946</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
+		<td>0.78148</td>
 		<td></td>
 	</tr>                            	
 	<tr>
 		<td>1-layer Bidirectional GRU</td>
 		<td>714,818</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
+		<td>0.77873</td>
 		<td></td>
 	</tr>
 </tbody>
