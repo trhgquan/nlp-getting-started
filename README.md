@@ -591,45 +591,43 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td></td>	
 	</tr>
 	<tr>
-		<td rowspan="2">RNN + Dot Attention</td>
-		<td>1-layer Bidirectional LSTM</td>
+		<td rowspan="6">RNN + Attention</td>
+		<td>1-layer Bidirectional LSTM + Dot Attention</td>
 		<td>714,369</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.78516</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>1-layer Bidirectional GRU</td>
+		<td>1-layer Bidirectional GRU + Dot Attention</td>
 		<td>698,241</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.78516</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td rowspan="2">RNN + General Attention</td>
-		<td>1-layer Bidirectional LSTM</td>
+		<td>1-layer Bidirectional LSTM + General Attention</td>
 		<td>730,881</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.77995</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td>1-layer Bidirectional GRU</td>
+		<td>1-layer Bidirectional GRU + General Attention</td>
 		<td>714,753</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.77719</td>
 		<td></td>
 	</tr>
 	<tr>
-		<td rowspan="2">RNN + Concatenate Attention</td>
-		<td>1-layer Bidirectional LSTM</td>
+		<td>1-layer Bidirectional LSTM + Concatenate Attention</td>
 		<td>730,946</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.78148</td>
 		<td></td>
 	</tr>                            	
 	<tr>
-		<td>1-layer Bidirectional GRU</td>
+		<td>1-layer Bidirectional GRU + Concatenate Attention</td>
 		<td>714,818</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.77873</td>
