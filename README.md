@@ -591,11 +591,11 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td></td>	
 	</tr>
 	<tr>
-		<td rowspan="6">RNN + Attention</td>
+		<td rowspan="6"><a href="https://arxiv.org/abs/1508.04025">RNN + Attention</a></td>
 		<td>1-layer Bidirectional LSTM + Dot Attention</td>
 		<td>714,369</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.78516</td>
+		<td>0.76892</td>
 		<td></td>
 	</tr>
 	<tr>
@@ -631,6 +631,35 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>714,818</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.77873</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td rowspan="4"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
+		<td>CNN-rand</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+	    <td>CNN-static (word2vec)</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+	    <td>CNN-non-static (word2vec)</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+	    <td>CNN-multichannel</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
 		<td></td>
 	</tr>
 </tbody>
