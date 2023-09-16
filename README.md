@@ -45,14 +45,14 @@ However there are some exceptions where a specific preprocessing method of the p
 
 #### Deep learning models
 
-| Hyperparameter  | Value |
-| --------------- | ----- |
-| Train:test      | 8:2   |
-| Batch size	  | 64	  |
-| Learning rate	  | 1e-4  |
-| Embedding dim	  | 64    |
-| Epochs          | 10    |
-| Vocab size      | 10000 |
+| Hyperparameter | Value |
+| -------------- | ----- |
+| Train:test     | 8:2   |
+| Batch size     | 64    |
+| Learning rate  | 1e-4  |
+| Embedding dim  | 64    |
+| Epochs         | 10    |
+| Vocab size     | 10000 |
 
 #### LLMs
 
@@ -98,102 +98,102 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 
 <table>
 <thead>
-	<tr>
-		<th colspan="2">Model</th>
-		<th>Vectorizer</th>
-		<th>Training configurations</th>
-		<th>Public F1</th>
-	</tr>
+    <tr>
+        <th colspan="2">Model</th>
+        <th>Vectorizer</th>
+        <th>Training configurations</th>
+        <th>Public F1</th>
+    </tr>
 </thead>
 <tbody>
-	<tr>
-		<td>KMean</td>
-		<td></td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.50658</td>         	
-	</tr>
-	<tr>
-		<td rowspan="2">Linear Models</td>
-		<td>Logistic Regression</td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.80171</td>
-	</tr>
-	<tr>
-		<td>Stochastic Gradient Descent</td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.80386</td>
-	</tr>
-	<tr>
-		<td>Support Vector Machine</td>
-		<td></td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.80140</td>
-	</tr>
-	<tr>
-		<td>Random Forest</td>
-		<td></td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.78792</td>
-	</tr>
-	<tr>
-		<td>AdaBoost</td>
-		<td>Decision Tree</td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.72847</td>
-	</tr>
-	<tr>
-	    <td>Bagging</td>
-		<td>Decision Tree</td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.74348</td>
-	</tr>  
-	<tr>
-		<td>Decision Tree</td>
-		<td></td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.71069</td>
-	</tr>
-	<tr>
-		<td rowspan="2">Gradient Boosting</td>
-		<td></td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.73889</td>
-	</tr>
-	<tr>
-		<td>XGBoost</td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.74992</td>
-	</tr>
-	<tr>
-		<td rowspan="2">Naive Bayes</td>
-		<td>Multinomial Naive Bayes</td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.80447</td>
-	</tr>
-	<tr>
-		<td>Complement Naive Bayes</td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.79589</td>
-	</tr>
-	<tr>
-		<td>Multilayer Perceptrons</td>
-		<td></td>
-		<td>TFIDF</td>
-		<td><a href="#statistical-models">[1]</a></td>
-		<td>0.75911</td>
-	</tr>
+    <tr>
+        <td>KMean</td>
+        <td></td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.50658</td>         	
+    </tr>
+    <tr>
+        <td rowspan="2">Linear Models</td>
+        <td>Logistic Regression</td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.80171</td>
+    </tr>
+    <tr>
+        <td>Stochastic Gradient Descent</td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.80386</td>
+    </tr>
+    <tr>
+        <td>Support Vector Machine</td>
+        <td></td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.80140</td>
+    </tr>
+    <tr>
+        <td>Random Forest</td>
+        <td></td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.78792</td>
+    </tr>
+    <tr>
+        <td>AdaBoost</td>
+        <td>Decision Tree</td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.72847</td>
+    </tr>
+    <tr>
+        <td>Bagging</td>
+        <td>Decision Tree</td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.74348</td>
+    </tr>  
+    <tr>
+        <td>Decision Tree</td>
+        <td></td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.71069</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Gradient Boosting</td>
+        <td></td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.73889</td>
+    </tr>
+    <tr>
+        <td>XGBoost</td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.74992</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Naive Bayes</td>
+        <td>Multinomial Naive Bayes</td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.80447</td>
+    </tr>
+    <tr>
+        <td>Complement Naive Bayes</td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.79589</td>
+    </tr>
+    <tr>
+        <td>Multilayer Perceptrons</td>
+        <td></td>
+        <td>TFIDF</td>
+        <td><a href="#statistical-models">[1]</a></td>
+        <td>0.75911</td>
+    </tr>
 </tbody>
 </table>
 
@@ -494,14 +494,14 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="#LLMS">[2]</a></td>
         <td>0.82960</td>
     </tr>
-	<tr>
-		<td rowspan="3"><a href="https://arxiv.org/abs/2006.11316">SqueezeBERT</a></td>
-		<td><a href="https://huggingface.co/squeezebert/squeezebert-uncased">uncased</a></td>
-		<td>51M (huggingface)</td>
-		<td><a href="#LLMS">[2]</a></td>
-		<td>0.80324</td>
-		<td rowspan="3">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
-	</tr>
+    <tr>
+        <td rowspan="3"><a href="https://arxiv.org/abs/2006.11316">SqueezeBERT</a></td>
+        <td><a href="https://huggingface.co/squeezebert/squeezebert-uncased">uncased</a></td>
+        <td>51M (huggingface)</td>
+        <td><a href="#LLMS">[2]</a></td>
+        <td>0.80324</td>
+        <td rowspan="3">View list of parameters by huggingface <a href="https://huggingface.co/transformers/v4.9.2/pretrained_models.html">here</a></td>
+    </tr>
     <tr>
         <td><a href="https://huggingface.co/squeezebert/squeezebert-mnli">mnli</a></td>
         <td>51M (huggingface)</td>
@@ -570,98 +570,98 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.77352</td>
         <td></td>
     </tr>
-	<tr>
-		<td>2-layers stacked Bidirectional LSTM</td>
-		<td>751,489</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.78026</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>1-layer Bidirectional GRU</td>
-		<td>698,241</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.77536</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>2-layers stacked Bidirectional GRU</td>
-		<td>725,249</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.77566</td>
-		<td></td>	
-	</tr>
-	<tr>
-		<td rowspan="6"><a href="https://arxiv.org/abs/1508.04025">RNN + Attention</a></td>
-		<td>1-layer Bidirectional LSTM + Dot Attention</td>
-		<td>714,369</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.76892</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>1-layer Bidirectional GRU + Dot Attention</td>
-		<td>698,241</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.78516</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>1-layer Bidirectional LSTM + General Attention</td>
-		<td>730,881</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.77995</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>1-layer Bidirectional GRU + General Attention</td>
-		<td>714,753</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.77719</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>1-layer Bidirectional LSTM + Concatenate Attention</td>
-		<td>730,946</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.78148</td>
-		<td></td>
-	</tr>                            	
-	<tr>
-		<td>1-layer Bidirectional GRU + Concatenate Attention</td>
-		<td>714,818</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.77873</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td rowspan="4"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
-		<td>CNN-rand</td>
-		<td>3,360,601</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.42966</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>CNN-static (word2vec)</td>
-		<td></td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>CNN-non-static (word2vec)</td>
-		<td></td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>CNN-multichannel</td>
-		<td></td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td>2-layers stacked Bidirectional LSTM</td>
+        <td>751,489</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.78026</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1-layer Bidirectional GRU</td>
+        <td>698,241</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.77536</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2-layers stacked Bidirectional GRU</td>
+        <td>725,249</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.77566</td>
+        <td></td>	
+    </tr>
+    <tr>
+        <td rowspan="6"><a href="https://arxiv.org/abs/1508.04025">RNN + Attention</a></td>
+        <td>1-layer Bidirectional LSTM + Dot Attention</td>
+        <td>714,369</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.76892</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1-layer Bidirectional GRU + Dot Attention</td>
+        <td>698,241</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.78516</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1-layer Bidirectional LSTM + General Attention</td>
+        <td>730,881</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.77995</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1-layer Bidirectional GRU + General Attention</td>
+        <td>714,753</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.77719</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>1-layer Bidirectional LSTM + Concatenate Attention</td>
+        <td>730,946</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.78148</td>
+        <td></td>
+    </tr>                            	
+    <tr>
+        <td>1-layer Bidirectional GRU + Concatenate Attention</td>
+        <td>714,818</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.77873</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td rowspan="4"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
+        <td>CNN-rand</td>
+        <td>3,360,601</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.42966</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN-static (word2vec)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN-non-static (word2vec)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN-multichannel</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
 </tbody>
 </table>

@@ -9,16 +9,17 @@ from model import create_encoder, create_model
 from utils import clean_df
 from dataset import create_dataset
 
+
 def main():
     parser = ArgumentParser()
     parser.add_argument("--train", default="train.csv")
     parser.add_argument("--train_size", default=.8)
     parser.add_argument("--test_size", default=.2)
     parser.add_argument("--vocab_size", default=10000)
-	parser.add_argument("--sequence_length", default=30)
-	parser.add_argument("--filters", default=[3, 4, 5])
-	parser.add_argument("--num_filters", default=100)
-	parser.add_argument("--embedding_dim", default=300)
+    parser.add_argument("--sequence_length", default=30)
+    parser.add_argument("--filters", default=[3, 4, 5])
+    parser.add_argument("--num_filters", default=100)
+    parser.add_argument("--embedding_dim", default=300)
     parser.add_argument("--dropout_rate", default=.5)
     parser.add_argument("--learning_rate", default=1e-4)
     parser.add_argument("--epochs", default=10)
@@ -43,10 +44,10 @@ def main():
 
     encoder = create_encoder(X_train=X_train, VOCAB_SIZE=args.vocab_size)
 
-    batch_size = args.batch_size                       
+    batch_size = args.batch_size
     learning_rate, dropout_rate = args.learning_rate, args.dropout_rate
-	embedding_dim, sequence_length = args.embedding_dim, args.sequence_length
-	filters, num_filters = args.filters, args.num_filters	
+    embedding_dim, sequence_length = args.embedding_dim, args.sequence_length
+    filters, num_filters = args.filters, args.num_filters
 
     train_ds = create_dataset(
         data=X_train, label=y_train, batch_size=batch_size)
@@ -55,10 +56,10 @@ def main():
 
     model = create_model(encoder=encoder,
                          embedding_dim=embedding_dim,
-						 sequence_length=sequence_length,
+                         sequence_length=sequence_length,
                          filters=filters,
-						 num_filters=num_filters,
-						 dropout_rate=dropout_rate,
+                         num_filters=num_filters,
+                         dropout_rate=dropout_rate,
                          learning_rate=learning_rate)
 
     hist = model.fit(train_ds, epochs=args.epochs, validation_data=(
