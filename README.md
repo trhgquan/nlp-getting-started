@@ -637,7 +637,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 	<tr>
 		<td rowspan="4"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
 		<td>CNN-rand</td>
-		<td></td>
+		<td>3,761,177</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
 		<td>0.42966</td>
 		<td></td>
