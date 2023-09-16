@@ -50,6 +50,7 @@ However there are some exceptions where a specific preprocessing method of the p
 | Train:test      | 8:2   |
 | Batch size	  | 64	  |
 | Learning rate	  | 1e-4  |
+| Embedding dim	  | 64    |
 | Epochs          | 10    |
 | Vocab size      | 10000 |
 
@@ -638,7 +639,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>CNN-rand</td>
 		<td></td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
+		<td>0.42966</td>
 		<td></td>
 	</tr>
 	<tr>
