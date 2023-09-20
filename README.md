@@ -45,6 +45,7 @@ However there are some exceptions where a specific preprocessing method of the p
 
 #### Deep learning models
 
+##### RNNs
 | Hyperparameter | Value |
 | -------------- | ----- |
 | Train:test     | 8:2   |
@@ -53,6 +54,16 @@ However there are some exceptions where a specific preprocessing method of the p
 | Embedding dim  | 64    |
 | Epochs         | 10    |
 | Vocab size     | 10000 |
+
+##### CNNs
+
+- CNN without pretrained embeddings: `threshold` = .4318
+- CNN with GloVe (nontrainable): `threshold` = .45
+- CNN with GloVe (trainable): `threshold` = (todo)
+- CNN with fastText (nontrainable): `threshold` = (todo)
+- CNN with fastText (trainable): `threshold` = (todo)
+- CNN with word2vec (nontrainable): `threshold` = (todo)
+- CNN with word2vec (trainable): `threshold` = (todo)
 
 #### LLMs
 
@@ -635,11 +646,39 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td></td>
     </tr>
     <tr>
-        <td rowspan="4"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
-        <td>CNN-rand</td>
+        <td rowspan="7"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
+        <td>CNN-non-static (random embedding)</td>
         <td>3,360,601</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.42966</td>
+        <td>0.62396</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN-static (GloVe)</td>
+        <td>280,601</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.72509</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN-non-static (GloVe)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN-static (fastText)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN-non-static (fastText)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
@@ -651,13 +690,6 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
     <tr>
         <td>CNN-non-static (word2vec)</td>
-        <td></td>
-        <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>CNN-multichannel</td>
         <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>

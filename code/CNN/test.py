@@ -7,10 +7,9 @@ from model import create_encoder, create_model
 from utils import clean_sentence
 
 
-def predict(model, sentence):
-    pred = model.predict(np.array([sentence]))
-    return np.argmax(pred, axis=1)
-
+def predict(model, sentence, threshold = 0):
+	pred = model.predict(sentence)	
+	return pred >= threshold
 
 def main():
     parser = ArgumentParser()
