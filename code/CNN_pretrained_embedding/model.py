@@ -2,6 +2,7 @@ import tensorflow as tf
 import numpy as np
 import gensim.downloader as api
 
+
 def create_encoder(X_train=None, VOCAB_SIZE=1000, sequence_length=30):
     encoder = tf.keras.layers.TextVectorization(
         max_tokens=VOCAB_SIZE,
@@ -20,8 +21,8 @@ class CNN(tf.keras.Model):
                  filters=[3, 4, 5],
                  num_filters=100,
                  embedding_dim=300,
-				 embedding_weights=None,
-				 embedding_trainable=False,
+                 embedding_weights=None,
+                 embedding_trainable=False,
                  sequence_length=30,
                  dropout_rate=.5):
         super().__init__()
@@ -29,8 +30,8 @@ class CNN(tf.keras.Model):
         self.filters = filters
         self.num_filters = num_filters
         self.embedding_dim = embedding_dim
-		self.embedding_weights = embedding_weights
-		self.embedding_trainable = embedding_trainable
+        self.embedding_weights = embedding_weights
+        self.embedding_trainable = embedding_trainable
         self.sequence_length = sequence_length
         self.dropout_rate = dropout_rate
 
@@ -40,8 +41,8 @@ class CNN(tf.keras.Model):
             input_dim=len(self.encoder.get_vocabulary()),
             output_dim=self.embedding_dim,
             input_length=self.sequence_length,
-			trainable=self.embedding_trainable,
-			weights=self.embedding_weights,
+            trainable=self.embedding_trainable,
+            weights=self.embedding_weights,
             name="embedding"
         )
 
@@ -74,7 +75,7 @@ class CNN(tf.keras.Model):
 
         self.dense = tf.keras.layers.Dense(64, activation="sigmoid")
 
-		self.final = tf.keras.layers.Dense(1, activation="sigmoid")
+        self.final = tf.keras.layers.Dense(1, activation="sigmoid")
 
     def call(self, x):
         x = self.encoder(x)
@@ -91,16 +92,17 @@ class CNN(tf.keras.Model):
 
         dropout = self.dropout(flatten)
 
-		dense = self.dense(dropout)
+        dense = self.dense(dropout)
 
-		return self.final(dense)
+        return self.final(dense)
+
 
 def create_model(encoder,
                  num_filters=100,
                  filters=[3, 4, 5],
                  embedding_dim=300,
-				 embedding_weights=None,
-				 embedding_trainable=False,
+                 embedding_weights=None,
+                 embedding_trainable=False,
                  sequence_length=30,
                  dropout_rate=.5,
                  learning_rate=1e-4):
@@ -109,8 +111,8 @@ def create_model(encoder,
                 num_filters=num_filters,
                 filters=filters,
                 embedding_dim=embedding_dim,
-			    embedding_weights=embedding_weights,
-				embedding_trainable=embedding_trainable,
+                embedding_weights=embedding_weights,
+                embedding_trainable=embedding_trainable,
                 sequence_length=sequence_length,
                 dropout_rate=dropout_rate)
 
@@ -122,15 +124,16 @@ def create_model(encoder,
 
     return model
 
+
 def load_embedding(encoder=None, embedding_name=None):
-	embedding_model = api.load(embedding_name)
+    embedding_model = api.load(embedding_name)
 
-	embedding_dim = embedding_model.vector_size
+    embedding_dim = embedding_model.vector_size
 
-	embedding_matrix = np.zeros((len(encoder.get_vocabulary()), embedding_dim))
+    embedding_matrix = np.zeros((len(encoder.get_vocabulary()), embedding_dim))
 
-	for i, word in enumerate(encoder.get_vocabulary()):	
-		if word in embedding_model:
-			embedding_matrix[i] = embedding_model[word]
+    for i, word in enumerate(encoder.get_vocabulary()):
+        if word in embedding_model:
+            embedding_matrix[i] = embedding_model[word]
 
-	return embedding_dim, embedding_matrix
+    return embedding_dim, embedding_matrix
