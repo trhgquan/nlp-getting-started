@@ -46,6 +46,7 @@ However there are some exceptions where a specific preprocessing method of the p
 #### Deep learning models
 
 ##### RNNs
+
 | Hyperparameter | Value |
 | -------------- | ----- |
 | Train:test     | 8:2   |
@@ -57,13 +58,16 @@ However there are some exceptions where a specific preprocessing method of the p
 
 ##### CNNs
 
-- CNN without pretrained embeddings: `threshold` = .4318
-- CNN with GloVe (nontrainable): `threshold` = .45
-- CNN with GloVe (trainable): `threshold` = (todo)
-- CNN with fastText (nontrainable): `threshold` = (todo)
-- CNN with fastText (trainable): `threshold` = (todo)
-- CNN with word2vec (nontrainable): `threshold` = (todo)
-- CNN with word2vec (trainable): `threshold` = (todo)
+| Hyperparameter | Value    |
+| -------------- | -------- |
+| Train:test     | 8:2      |
+| Batch size     | 64       |
+| Learning rate  | 1e-4     |
+| Embedding dim  | 64       |
+| Epochs         | 100      |
+| Vocab size     | 10000    |
+| Early stopping | 5 epochs |
+| Classification threshold | 0.5 |
 
 #### LLMs
 
@@ -647,49 +651,49 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
     <tr>
         <td rowspan="7"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
-        <td>CNN-non-static (random embedding)</td>
-        <td>3,360,601</td>
+        <td>CNN non-static (random embedding)</td>
+        <td>299,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.62396</td>
+        <td>0.71345</td>
         <td></td>
     </tr>
     <tr>
-        <td>CNN-static (GloVe)</td>
-        <td>280,601</td>
+        <td>CNN static (glove-twitter-25)</td>
+        <td>299,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.72509</td>
+        <td>0.77689</td>
         <td></td>
     </tr>
     <tr>
-        <td>CNN-non-static (GloVe)</td>
-        <td></td>
+        <td>CNN non-static (glove-twitter-25)</td>
+        <td>299,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.80478</td>
         <td></td>
     </tr>
     <tr>
-        <td>CNN-static (fastText)</td>
-        <td></td>
-        <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>CNN-non-static (fastText)</td>
+        <td>CNN static (fastText)</td>
         <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
-        <td>CNN-static (word2vec)</td>
+        <td>CNN non-static (fastText)</td>
         <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
-        <td>CNN-non-static (word2vec)</td>
+        <td>CNN static (word2vec)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN non-static (word2vec)</td>
         <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
