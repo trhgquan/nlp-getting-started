@@ -650,7 +650,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td></td>
     </tr>
     <tr>
-        <td rowspan="7"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
+        <td rowspan="10"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
         <td>CNN non-static (random embedding)</td>
         <td>299,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -672,31 +672,52 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td></td>
     </tr>
     <tr>
-        <td>CNN static (fastText)</td>
+        <td>CNN static (glove-twitter-50)</td>
         <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
-        <td>CNN non-static (fastText)</td>
+        <td>CNN non-static (glove-twitter-50)</td>
         <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
-        <td>CNN static (word2vec)</td>
+        <td>CNN static (glove-twitter-100)</td>
         <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
-        <td>CNN non-static (word2vec)</td>
+        <td>CNN non-static (glove-twitter-100)</td>
         <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
+        <td></td>
+    </tr>
+	<tr>
+        <td>CNN static (glove-twitter-200)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN non-static (glove-twitter-200)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CNN non-static (fasttext-wiki-news-subwords-300)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>3,379,629</td>
         <td></td>
     </tr>
 </tbody>
