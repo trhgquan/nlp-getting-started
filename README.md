@@ -47,23 +47,22 @@ However there are some exceptions where a specific preprocessing method of the p
 
 ##### RNNs
 
-| Hyperparameter | Value |
-| -------------- | ----- |
-| Train:test     | 8:2   |
-| Batch size     | 64    |
-| Learning rate  | 1e-4  |
-| Embedding dim  | 64    |
-| Epochs         | 10    |
-| Vocab size     | 10000 |
+| Hyperparameter          | Value |
+| ----------------------- | ----- |
+| Train:test              | 8:2   |
+| Batch size (train/test) | 64/32 |
+| Learning rate           | 1e-4  |
+| Embedding dim           | 64    |
+| Epochs                  | 10    |
+| Vocab size              | 10000 |
 
 ##### CNNs
 
 | Hyperparameter           | Value    |
 | ------------------------ | -------- |
 | Train:test               | 8:2      |
-| Batch size               | 64       |
+| Batch size  (Train/test) | 64/32    |
 | Learning rate            | 1e-4     |
-| Embedding dim            | 64       |
 | Epochs                   | 100      |
 | Vocab size               | 10000    |
 | Early stopping           | 5 epochs |
@@ -99,12 +98,12 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
 
 All experiments were conducted under the same [Kaggle environment](https://www.kaggle.com/code/bconsolvo/hardware-available-on-kaggle):
 
-| Configuration | Value                                |
-| ------------- | ------------------------------------ |
-| CPU           | Intel Xeon 2.20 GHz CPU, 4vCPU cores |
-| Memory        | 32 GB                                |
-| GPU           | Tesla T4 (x2)                        |
-| Random seed   | 42                                   |
+| Configuration | Value                                            |
+| ------------- | ------------------------------------------------ |
+| CPU           | Intel Xeon 2.20 GHz CPU, 4vCPU cores             |
+| Memory        | 32 GB                                            |
+| GPU           | NVIDIA Tesla T4 (x2) (LLMs) or P100 (RNNs, CNNs) |
+| Random seed   | 42                                               |
 
 
 [wandb.ai report](https://api.wandb.ai/links/khongsomeo/5rxjwfn6)
