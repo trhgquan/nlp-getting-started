@@ -58,16 +58,16 @@ However there are some exceptions where a specific preprocessing method of the p
 
 ##### CNNs
 
-| Hyperparameter | Value    |
-| -------------- | -------- |
-| Train:test     | 8:2      |
-| Batch size     | 64       |
-| Learning rate  | 1e-4     |
-| Embedding dim  | 64       |
-| Epochs         | 100      |
-| Vocab size     | 10000    |
-| Early stopping | 5 epochs |
-| Classification threshold | 0.5 |
+| Hyperparameter           | Value    |
+| ------------------------ | -------- |
+| Train:test               | 8:2      |
+| Batch size               | 64       |
+| Learning rate            | 1e-4     |
+| Embedding dim            | 64       |
+| Epochs                   | 100      |
+| Vocab size               | 10000    |
+| Early stopping           | 5 epochs |
+| Classification threshold | 0.5      |
 
 #### LLMs
 
@@ -213,6 +213,8 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </table>
 
 #### Deep learning models
+
+##### LLMs
 
 <table>
 <thead>
@@ -577,6 +579,22 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td><a href="#too-large-llms">[4]</a></td>
         <td>0.81612</td>
     </tr>
+</tbody>
+</table>
+
+##### RNNs
+
+<table>
+<thead>
+    <tr>
+        <th colspan="2">Model (with paper link)</th>
+        <th>Pretrain parameters</th>
+        <th>Training configurations</th>
+        <th>Public F1</th>
+        <th>Notes</th>
+    </tr>
+</thead>
+<tbody>
     <tr>
         <td rowspan="4">RNN</td>
         <td>1-layer Bidirectional LSTM</td>
@@ -649,13 +667,29 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.77873</td>
         <td></td>
     </tr>
+</tbody>
+</table>
+
+##### CNNs
+
+<table>
+<thead>
+    <tr>
+        <th colspan="2">Model (with paper link)</th>
+        <th>Pretrain parameters</th>
+        <th>Training configurations</th>
+        <th>Public F1</th>
+        <th>Notes</th>
+    </tr>
+</thead>
+<tbody>
     <tr>
         <td rowspan="10"><a href="https://arxiv.org/abs/1408.5882">Deep CNN</a></td>
         <td>CNN non-static (random embedding)</td>
         <td>299,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.71345</td>
-        <td></td>
+        <td>Embedding dimension = 25 (equals to GloVe vector size)</td>
     </tr>
     <tr>
         <td>CNN static (glove-twitter-25)</td>
@@ -699,7 +733,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>(todo)</td>
         <td></td>
     </tr>
-	<tr>
+    <tr>
         <td>CNN static (glove-twitter-200)</td>
         <td></td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -715,9 +749,9 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
     <tr>
         <td>CNN non-static (fasttext-wiki-news-subwords-300)</td>
-        <td></td>
-        <td><a href="#deep-learning-models">[3]</a></td>
         <td>3,379,629</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
         <td></td>
     </tr>
 </tbody>

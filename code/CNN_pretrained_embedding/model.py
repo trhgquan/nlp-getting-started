@@ -15,7 +15,7 @@ def create_encoder(X_train=None, VOCAB_SIZE=1000, sequence_length=30):
     return encoder
 
 
-class CNN(tf.keras.Model):
+class CNN_with_Embedding(tf.keras.Model):
     def __init__(self,
                  encoder=None,
                  filters=[3, 4, 5],
@@ -107,7 +107,7 @@ def create_model(encoder,
                  dropout_rate=.5,
                  learning_rate=1e-4):
 
-    model = CNN(encoder=encoder,
+    model = CNN_with_Embedding(encoder=encoder,
                 num_filters=num_filters,
                 filters=filters,
                 embedding_dim=embedding_dim,
