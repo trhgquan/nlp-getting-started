@@ -581,7 +581,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </tbody>
 </table>
 
-##### RNNs
+##### RNNs, CNNs and ensemble models
 
 <table>
 <thead>
@@ -666,22 +666,6 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.77873</td>
         <td></td>
     </tr>
-</tbody>
-</table>
-
-##### CNNs
-
-<table>
-<thead>
-    <tr>
-        <th colspan="2">Model (with paper link)</th>
-        <th>Pretrain parameters</th>
-        <th>Training configurations</th>
-        <th>Public F1</th>
-        <th>Notes</th>
-    </tr>
-</thead>
-<tbody>
     <tr>
         <td rowspan="10"><a href="https://arxiv.org/abs/1408.5882">Deep CNN (random + pretrained embedding)</a></td>
         <td>CNN non-static (random embedding)</td>
