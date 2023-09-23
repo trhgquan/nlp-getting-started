@@ -334,6 +334,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.79711</td>
         <td></td>
     </tr>
+	<tr>
+		<td>CNN static (fasttext-wiki-news-subwords-300)</td>
+		<td>3,379,629</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td>0.57033</td>
     <tr>
         <td>CNN non-static (glove-twitter-25)</td>
         <td>299,629</td>
