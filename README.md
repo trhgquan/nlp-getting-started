@@ -329,9 +329,9 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
     <tr>
         <td>CNN static (glove-twitter-200)</td>
-        <td></td>
+        <td>2,259,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.79711</td>
         <td></td>
     </tr>
     <tr>
@@ -357,9 +357,9 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
     <tr>
         <td>CNN non-static (glove-twitter-200)</td>
-        <td></td>
+        <td>2,259,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.80140</td>
         <td></td>
     </tr>
     <tr>
