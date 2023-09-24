@@ -299,7 +299,7 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td></td>
     </tr>
     <tr>
-        <td rowspan="10"><a href="https://arxiv.org/abs/1408.5882">Deep CNN (random + pretrained embedding)</a></td>
+        <td rowspan="11"><a href="https://arxiv.org/abs/1408.5882">Deep CNN (random + pretrained embedding)</a></td>
         <td>CNN non-static (random embedding)</td>
         <td>299,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -338,8 +338,9 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 		<td>CNN static (fasttext-wiki-news-subwords-300)</td>
 		<td>3,379,629</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
 		<td>0.57033</td>
+		<td></td>
+	</tr>
     <tr>
         <td>CNN non-static (glove-twitter-25)</td>
         <td>299,629</td>
@@ -375,6 +376,35 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.73980</td>
         <td></td>
     </tr>
+	<tr>
+		<td rowspan="10"><a href="https://aclanthology.org/S17-2134/">Multi-channel CNN and LSTM</a></td>
+		<td>Random embedding (static) + Unidirectional LSTM</td>
+		<td>3,326,169</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>0.67391</td>
+		<td></td>
+	</tr>
+	<tr>
+	    <td>GloVe (static) + Unidirectional LSTM</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Random embedding (nonstatic) + Unidirectional LSTM</td>
+		<td>3,326,169</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>0.71284</td>
+		<td></td>
+	</tr>
+	<tr>
+	    <td>GloVe (nonstatic) + Unidirectional LSTM</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
 </tbody>
 </table>
 
