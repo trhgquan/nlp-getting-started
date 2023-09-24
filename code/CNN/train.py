@@ -5,7 +5,7 @@ from argparse import ArgumentParser
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from model import create_encoder, create_model
+from model import create_encoder, create_model, load_embedding
 from utils import clean_df
 from dataset import create_dataset
 
@@ -19,7 +19,8 @@ def main():
     parser.add_argument("--sequence_length", default=30)
     parser.add_argument("--filters", default=[3, 4, 5])
     parser.add_argument("--num_filters", default=100)
-    parser.add_argument("--embedding_dim", default=300)
+    parser.add_argument("--pretrained_embedding", default=None)
+    parser.add_argument("--embedding_trainable", default=False)
     parser.add_argument("--dropout_rate", default=.5)
     parser.add_argument("--learning_rate", default=1e-4)
     parser.add_argument("--epochs", default=10)
@@ -48,14 +49,23 @@ def main():
     learning_rate, dropout_rate = args.learning_rate, args.dropout_rate
     embedding_dim, sequence_length = args.embedding_dim, args.sequence_length
     filters, num_filters = args.filters, args.num_filters
+    pretrained_embedding = args.pretrained_embedding
+    embedding_trainable = args.embedding_trainable
 
     train_ds = create_dataset(
         data=X_train, label=y_train, batch_size=batch_size)
     val_ds = create_dataset(data=X_test, label=y_test,
                             batch_size=batch_size//2)
 
+    embedding_dim, embedding_weights = load_embedding(
+        encoder=encoder,
+        embedding_name=pretrained_embedding
+    )
+
     model = create_model(encoder=encoder,
                          embedding_dim=embedding_dim,
+                         embedding_weights=embedding_weights,
+                         embedding_trainable=embedding_trainable,
                          sequence_length=sequence_length,
                          filters=filters,
                          num_filters=num_filters,
