@@ -7,8 +7,15 @@ This project is licensed under [The GNU GPL v3](LICENSE)
 
 *Please have a look at the version history of each notebook.*
 
-- [Statistical models notebook](https://www.kaggle.com/code/trhgquan/disaster-tweet-tfidf)
-- [Deep learning notebook](https://www.kaggle.com/code/trhgquan/disaster-tweet-with-llms)
+Statistical models:
+- [Statistical models](https://www.kaggle.com/code/trhgquan/disaster-tweet-tfidf)
+
+Deep learning models:
+- [RNN](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-rnn-from-tensorflow-tutorial)
+- [RNN with Attention](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-rnn-attention)
+- [CNN](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn)
+- [Multi-channel CNN with RNN](https://www.kaggle.com/trhgquan/disaster-tweet-using-cnn-and-rnn)
+- [LLMs](https://www.kaggle.com/code/trhgquan/disaster-tweet-with-llms)
 
 ## Code
 
@@ -96,7 +103,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
 
 ### Results
 
-All experiments were conducted under the same [Kaggle environment](https://www.kaggle.com/code/bconsolvo/hardware-available-on-kaggle):
+**Experiment setup:** All experiments were conducted under the same [Kaggle environment](https://www.kaggle.com/code/bconsolvo/hardware-available-on-kaggle):
 
 | Configuration | Value                                            |
 | ------------- | ------------------------------------------------ |
@@ -105,10 +112,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 | GPU           | NVIDIA Tesla T4 (x2) (LLMs) or P100 (RNNs, CNNs) |
 | Random seed   | 42                                               |
 
-
 [wandb.ai report](https://api.wandb.ai/links/khongsomeo/5rxjwfn6)
 
 #### Statistical models
+
+<details>
+<summary>Click to view</summary>
 
 <table>
 <thead>
@@ -211,9 +220,14 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </tbody>
 </table>
 
+</details>
+
 #### Deep learning models
 
 ##### RNNs, CNNs and ensemble models
+
+<details>
+<summary>Click to show</summary>
 
 <table>
 <thead>
@@ -450,7 +464,12 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
 </tbody>
 </table>
 
+</details>
+
 ##### LLMs
+
+<details>
+<summary>Click to view</summary>
 
 <table>
 <thead>
@@ -817,3 +836,5 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
     </tr>
 </tbody>
 </table>
+
+</details>
