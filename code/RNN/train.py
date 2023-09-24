@@ -9,6 +9,7 @@ from model import create_encoder, create_model
 from utils import clean_df
 from dataset import create_dataset
 
+
 def main():
     parser = ArgumentParser()
     parser.add_argument("--train", default="train.csv")
@@ -17,7 +18,8 @@ def main():
     parser.add_argument("--vocab_size", default=10000)
     parser.add_argument("--model_layers", default=2)
     parser.add_argument("--rnn_type", default="lstm")
-    parser.add_argument("--rnn_units", default=[64, 32])
+    parser.add_argument("--rnn_units", nargs="*",
+                        action="append", default=[64, 32])
     parser.add_argument("--dropout_rate", default=.5)
     parser.add_argument("--learning_rate", default=1e-4)
     parser.add_argument("--dense_units", default=64)

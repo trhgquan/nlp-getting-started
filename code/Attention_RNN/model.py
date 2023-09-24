@@ -42,7 +42,13 @@ class Attention(tf.keras.Model):
 
 
 class RNN_with_Attention(tf.keras.Model):
-    def __init__(self, encoder, dense_units=64, attention_type="dot", attention_units=64, cells_type="gru", cells_unit=64):
+    def __init__(self,
+                 encoder,
+                 dense_units=64,
+                 attention_type="dot",
+                 attention_units=64,
+                 cells_type="gru",
+                 cells_unit=64):
         super(RNN_with_Attention, self).__init__()
 
         assert attention_type in ["dot", "general", "concat"]
@@ -50,9 +56,10 @@ class RNN_with_Attention(tf.keras.Model):
 
         self.encoder = encoder
         self.attention_type = attention_type
-        self.attention_unit = attention_units
+        self.attention_units = attention_units
         self.cells_type = cells_type
-        self.cells_unit = cells_unit
+        self.cells_units = cells_unit
+        self.dense_units = dense_units
 
         print(
             f"Initializing model with {self.attention_type} attention and {self.cells_type} cells")
@@ -66,14 +73,14 @@ class RNN_with_Attention(tf.keras.Model):
 
         if self.cells_type == "gru":
             bidirectional_cell = tf.keras.layers.GRU(
-                self.cells_unit,
+                self.cells_units,
                 return_sequences=True,
                 return_state=True
             )
 
         elif self.cells_type == "lstm":
             bidirectional_cell = tf.keras.layers.LSTM(
-                self.cells_unit,
+                self.cells_units,
                 return_sequences=True,
                 return_state=True
             )
@@ -118,7 +125,14 @@ def create_encoder(X_train, VOCAB_SIZE=10000):
     return encoder
 
 
-def create_model(encoder, dense_units=64, rnn_type="gru", rnn_units=64, attention_type="dot", attention_units=64, learning_rate=1e-4):
+def create_model(encoder,
+                 dense_units=64,
+                 rnn_type="gru",
+                 rnn_units=64,
+                 attention_type="dot",
+                 attention_units=64,
+                 learning_rate=1e-4):
+
     model = RNN_with_Attention(encoder=encoder,
                                dense_units=dense_units,
                                attention_units=attention_units,

@@ -29,7 +29,7 @@ def load_embedding(encoder=None, embedding_name=None):
     return embedding_dim, embedding_matrix
 
 
-class CNN(tf.keras.Model):
+class CNN_RNN(tf.keras.Model):
     def __init__(self,
                  encoder=None,
                  filters=[3, 4, 5],
@@ -162,16 +162,16 @@ def create_model(encoder,
         embedding_weights, embedding_dim = load_embedding(encoder=encoder,
                                                           embedding_name=embedding_name)
 
-    model = CNN(encoder=encoder,
-                num_filters=num_filters,
-                filters=filters,
-                embedding_dim=embedding_dim,
-                embedding_weights=embedding_weights,
-                embedding_trainable=embedding_trainable,
-                recurrent_units=recurrent_units,
-                recurrent_type=recurrent_type,
-                sequence_length=sequence_length,
-                dropout_rate=dropout_rate)
+    model = CNN_RNN(encoder=encoder,
+                    num_filters=num_filters,
+                    filters=filters,
+                    embedding_dim=embedding_dim,
+                    embedding_weights=embedding_weights,
+                    embedding_trainable=embedding_trainable,
+                    recurrent_units=recurrent_units,
+                    recurrent_type=recurrent_type,
+                    sequence_length=sequence_length,
+                    dropout_rate=dropout_rate)
 
     model.compile(
         loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),

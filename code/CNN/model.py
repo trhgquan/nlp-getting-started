@@ -15,7 +15,7 @@ def create_encoder(X_train=None, VOCAB_SIZE=1000, sequence_length=30):
     return encoder
 
 
-class CNN_with_Embedding(tf.keras.Model):
+class CNN(tf.keras.Model):
     def __init__(self,
                  encoder=None,
                  filters=[3, 4, 5],
@@ -122,14 +122,14 @@ def create_model(encoder,
     else:
         embedding_dim, embedding_weights = embedding_dim, None
 
-    model = CNN_with_Embedding(encoder=encoder,
-                               num_filters=num_filters,
-                               filters=filters,
-                               embedding_dim=embedding_dim,
-                               embedding_weights=embedding_weights,
-                               embedding_trainable=embedding_trainable,
-                               sequence_length=sequence_length,
-                               dropout_rate=dropout_rate)
+    model = CNN(encoder=encoder,
+                num_filters=num_filters,
+                filters=filters,
+                embedding_dim=embedding_dim,
+                embedding_weights=embedding_weights,
+                embedding_trainable=embedding_trainable,
+                sequence_length=sequence_length,
+                dropout_rate=dropout_rate)
 
     model.compile(
         loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),

@@ -47,7 +47,12 @@ class BidirectionalRNNModel(tf.keras.Model):
 
 
 class StackedBidirectionalRNNModel(tf.keras.Model):
-    def __init__(self, encoder, rnn_type="lstm", rnn_units=[64, 32], dense_units=64, dropout_rate=.5):
+    def __init__(self,
+                 encoder,
+                 rnn_type="lstm",
+                 rnn_units=[64, 32],
+                 dense_units=64,
+                 dropout_rate=.5):
         super().__init__()
 
         assert rnn_type in ["lstm", "gru"]
@@ -98,7 +103,13 @@ class StackedBidirectionalRNNModel(tf.keras.Model):
         return self.d2(x)
 
 
-def create_model(encoder, model_layers=2, rnn_type="lstm", rnn_units=[64, 32], dense_units=64, dropout_rate=.5, learning_rate=1e-4):
+def create_model(encoder,
+                 model_layers=2,
+                 rnn_type="lstm",
+                 rnn_units=[64, 32],
+                 dense_units=64,
+                 dropout_rate=.5,
+                 learning_rate=1e-4):
     if model_layers == 1:
         model = BidirectionalRNNModel(
             encoder=encoder,
