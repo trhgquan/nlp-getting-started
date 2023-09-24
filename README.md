@@ -54,6 +54,9 @@ However there are some exceptions where a specific preprocessing method of the p
 
 ##### RNNs
 
+<details>
+<summary>Click to view</summary>
+
 | Hyperparameter          | Value |
 | ----------------------- | ----- |
 | Train:test              | 8:2   |
@@ -63,7 +66,12 @@ However there are some exceptions where a specific preprocessing method of the p
 | Epochs                  | 10    |
 | Vocab size              | 10000 |
 
+</details>
+
 ##### CNNs
+
+<details>
+<summary>Click to view</summary>
 
 | Hyperparameter           | Value    |
 | ------------------------ | -------- |
@@ -75,7 +83,12 @@ However there are some exceptions where a specific preprocessing method of the p
 | Early stopping           | 5 epochs |
 | Classification threshold | 0.5      |
 
+</details>
+
 #### LLMs
+
+<details>
+<summary>Click to view</summary>
 
 | Hyperparameter       | Value    |
 | -------------------- | -------- |
@@ -86,7 +99,12 @@ However there are some exceptions where a specific preprocessing method of the p
 | Epochs               | 50       |
 | Early stopping       | 5 epochs |
 
+</details>
+
 #### Too-large LLMs
+
+<details>
+<summary>Click to view</summary>
 
 Some large LLMs cannot be trained with [hyperparameters in the LLMs section](#LLMs). In order to fit those models to Kaggle GPU's RAM, I reduced the batch size and learning rate to following values:
 
@@ -100,6 +118,8 @@ Some large LLMs cannot be trained with [hyperparameters in the LLMs section](#LL
 | Early stopping       | 5 epochs |
 
 All remaining hyperparametes stay the same as [LLMs](#LLMs).
+
+</details>
 
 ### Results
 
