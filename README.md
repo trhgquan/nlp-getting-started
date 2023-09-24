@@ -334,13 +334,13 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.79711</td>
         <td></td>
     </tr>
-	<tr>
-		<td>CNN static (fasttext-wiki-news-subwords-300)</td>
-		<td>3,379,629</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.57033</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td>CNN static (fasttext-wiki-news-subwords-300)</td>
+        <td>3,379,629</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.57033</td>
+        <td></td>
+    </tr>
     <tr>
         <td>CNN non-static (glove-twitter-25)</td>
         <td>299,629</td>
@@ -376,35 +376,77 @@ All experiments were conducted under the same [Kaggle environment](https://www.k
         <td>0.73980</td>
         <td></td>
     </tr>
-	<tr>
-		<td rowspan="10"><a href="https://aclanthology.org/S17-2134/">Multi-channel CNN and RNN</a></td>
-		<td>Random embedding (static) + Unidirectional LSTM</td>
-		<td>3,326,169</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.67391</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
-		<td>1,366,169</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.68372</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>Random embedding (nonstatic) + Unidirectional LSTM</td>
-		<td>3,326,169</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.71284</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>GloVe (glove-twitter-25, nonstatic) + Unidirectional LSTM</td>
-		<td>1,366,169</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.79374</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td rowspan="10"><a href="https://aclanthology.org/S17-2134/">Multi-channel CNN and RNN</a></td>
+        <td>Random embedding (static) + Unidirectional LSTM</td>
+        <td>3,326,169</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.67391</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
+        <td>1,366,169</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.68372</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-50, static) + Unidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-100, static) + Unidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-200, static) + Unidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Random embedding (nonstatic) + Unidirectional LSTM</td>
+        <td>3,326,169</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.71284</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-25, nonstatic) + Unidirectional LSTM</td>
+        <td>1,366,169</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.79374</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-50, nonstatic) + Unidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-100, nonstatic) + Unidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-200, nonstatic) + Unidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
 </tbody>
 </table>
 
