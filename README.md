@@ -227,7 +227,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
 ##### RNNs, CNNs and ensemble models
 
 <details>
-<summary>Click to show</summary>
+<summary>Click to view</summary>
 
 <table>
 <thead>
