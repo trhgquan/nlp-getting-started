@@ -265,28 +265,28 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>1-layer Bidirectional LSTM</td>
         <td>714,369</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77352</td>
         <td></td>
     </tr>
     <tr>
         <td>2-layers stacked Bidirectional LSTM</td>
         <td>751,489</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.78026</td>
         <td></td>
     </tr>
     <tr>
         <td>1-layer Bidirectional GRU</td>
         <td>698,241</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77536</td>
         <td></td>
     </tr>
     <tr>
         <td>2-layers stacked Bidirectional GRU</td>
         <td>725,249</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77566</td>
         <td></td>	
     </tr>
     <tr>
@@ -294,42 +294,42 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>1-layer Bidirectional LSTM + Dot Attention</td>
         <td>714,369</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.76892</td>
         <td></td>
     </tr>
     <tr>
         <td>1-layer Bidirectional GRU + Dot Attention</td>
         <td>698,241</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.78516</td>
         <td></td>
     </tr>
     <tr>
         <td>1-layer Bidirectional LSTM + General Attention</td>
         <td>730,881</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77995</td>
         <td></td>
     </tr>
     <tr>
         <td>1-layer Bidirectional GRU + General Attention</td>
         <td>714,753</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77719</td>
         <td></td>
     </tr>
     <tr>
         <td>1-layer Bidirectional LSTM + Concatenate Attention</td>
         <td>730,946</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.78148</td>
         <td></td>
     </tr>                            	
     <tr>
         <td>1-layer Bidirectional GRU + Concatenate Attention</td>
         <td>714,818</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77873</td>
         <td></td>
     </tr>
     <tr>
@@ -337,77 +337,77 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>CNN non-static (random embedding)</td>
         <td>299,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.71345</td>
         <td>Embedding dimension = 25 (equals to GloVe vector size)</td>
     </tr>
     <tr>
         <td>CNN static (glove-twitter-25)</td>
         <td>299,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77689</td>
         <td></td>
     </tr>
     <tr>
         <td>CNN static (glove-twitter-50)</td>
         <td>579,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.78700</td>
         <td></td>
     </tr>
     <tr>
         <td>CNN static (glove-twitter-100)</td>
         <td>1,139,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.79374</td>
         <td></td>
     </tr>
     <tr>
         <td>CNN static (glove-twitter-200)</td>
         <td>2,259,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.79711</td>
         <td></td>
     </tr>
     <tr>
         <td>CNN static (fasttext-wiki-news-subwords-300)</td>
         <td>3,379,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.57033</td>
         <td></td>
     </tr>
     <tr>
         <td>CNN non-static (glove-twitter-25)</td>
         <td>299,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.80478</td>
         <td></td>
     </tr>
     <tr>
         <td>CNN non-static (glove-twitter-50)</td>
         <td>579,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.79619</td>
         <td></td>
     </tr>
     <tr>
         <td>CNN non-static (glove-twitter-100)</td>
         <td>1,139,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.79987</td>
         <td></td>
     </tr>
     <tr>
         <td>CNN non-static (glove-twitter-200)</td>
         <td>2,259,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.80140</td>
         <td></td>
     </tr>
     <tr>
         <td>CNN non-static (fasttext-wiki-news-subwords-300)</td>
         <td>3,379,629</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.73980</td>
         <td></td>
     </tr>
     <tr>
@@ -415,14 +415,14 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>Random embedding (static) + Unidirectional LSTM</td>
         <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.67391</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
         <td>1,366,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.68372</td>
         <td></td>
     </tr>
     <tr>
@@ -450,7 +450,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>Random embedding (nonstatic) + Unidirectional LSTM</td>
         <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.71284</td>
         <td></td>
     </tr>
     <tr>
