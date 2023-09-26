@@ -73,17 +73,51 @@ However there are some exceptions where a specific preprocessing method of the p
 <details>
 <summary>Click to view</summary>
 
-| Hyperparameter           | Value    |
-| ------------------------ | -------- |
-| Train:test               | 8:2      |
-| Batch size  (Train/test) | 64/32    |
-| Learning rate            | 1e-4     |
-| Epochs                   | 100      |
-| Vocab size               | 10000    |
-| Early stopping           | 5 epochs |
-| Classification threshold | 0.5      |
+| Hyperparameter           | Value       |
+| ------------------------ | ----------- |
+| Train:test               | 8:2         |
+| Batch size  (Train/test) | 64/32       |
+| Filter size              | 100         |
+| Window size              | `[3, 4, 5]` |
+| L2 regularization        | 3           |
+| Dropout rate             | 0.5         |
+| Dense unit               | 64          |
+| Learning rate            | 1e-4        |
+| Epochs                   | 100         |
+| Vocab size               | 10000       |
+| Early stopping           | 5 epochs    |
+| Classification threshold | 0.5         |
 
 </details>
+
+##### CNN & RNN
+
+<details>
+<summary>Click to view</summary>
+
+CNN & RNN feed model:
+
+| Hyperparameter           | Value       |
+| ------------------------ | ----------- |
+| Train:test               | 8:2         |
+| Batch size  (Train/test) | 64/32       |
+| Recurrent units          | 512         |
+| Filter size              | 200         |
+| Window size              | `[1, 2, 3]` |
+| Dropout rate             | 0.5         |
+| Dense unit               | 64          |
+| Learning rate            | 1e-4        |
+| Epochs                   | 100         |
+| Vocab size               | 10000       |
+| Early stopping           | 5 epochs    |
+| Classification threshold | 0.5         |
+
+CNN & RNN concat model:
+
+(todo)
+
+</details>
+
 
 #### LLMs
 
@@ -481,21 +515,21 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>(todo)</td>
         <td></td>
     </tr>
-	<tr>
-	    <td rowspan="10">Multi-channel CNN and RNN (concat)</td>
-		<td>Random embedding (static)</td>
-		<td></td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>Random embedding (nonstatic)</td>
-		<td></td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td rowspan="10"><a href="https://ieeexplore.ieee.org/document/8119429">Multi-channel CNN and RNN (concat)</a></td>
+        <td>Random embedding (static)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Random embedding (nonstatic)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
 </tbody>
 </table>
 
