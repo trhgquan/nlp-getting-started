@@ -427,23 +427,23 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>GloVe (glove-twitter-50, static) + Unidirectional LSTM</td>
-        <td>1,595,769</td>
+        <td>1,646,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77781</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-100, static) + Unidirectional LSTM</td>
-        <td>2,105,769</td>
+        <td>2,206,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.73460</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-200, static) + Unidirectional LSTM</td>
-        <td>3,125,769</td>
+        <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.71835</td>
         <td></td>
     </tr>
     <tr>
@@ -457,30 +457,45 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-25, nonstatic) + Unidirectional LSTM</td>
         <td>1,366,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.75942</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-50, nonstatic) + Unidirectional LSTM</td>
-        <td>1,595,769</td>
+        <td>1,646,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.78240</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-100, nonstatic) + Unidirectional LSTM</td>
-        <td>2,105,769</td>
+        <td>2,206,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-200, nonstatic) + Unidirectional LSTM</td>
-        <td>3,125,769</td>
+        <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
+	<tr>
+	    <td rowspan="10">Multi-channel CNN and RNN (concat)</td>
+		<td>Random embedding (static)</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Random embedding (nonstatic)</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
 </tbody>
 </table>
 
