@@ -505,14 +505,14 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-100, nonstatic) + Unidirectional LSTM</td>
         <td>2,206,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.66932</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-200, nonstatic) + Unidirectional LSTM</td>
         <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.74134</td>
         <td></td>
     </tr>
     <tr>
