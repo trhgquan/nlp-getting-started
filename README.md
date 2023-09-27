@@ -505,29 +505,29 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-100, nonstatic) + Unidirectional LSTM</td>
         <td>2,206,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.66932</td>
+        <td>0.78700</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-200, nonstatic) + Unidirectional LSTM</td>
         <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.74134</td>
+        <td>0.78179</td>
         <td></td>
     </tr>
     <tr>
         <td rowspan="10"><a href="https://ieeexplore.ieee.org/document/8119429">Multi-channel CNN and RNN (concat)</a></td>
         <td>Random embedding (static)</td>
-        <td></td>
+        <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
         <td>Random embedding (nonstatic)</td>
-        <td></td>
+        <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.75574</td>
         <td></td>
     </tr>
 </tbody>
