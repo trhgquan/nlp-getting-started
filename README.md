@@ -8,13 +8,16 @@ This project is licensed under [The GNU GPL v3](LICENSE)
 *Please have a look at the version history of each notebook.*
 
 Statistical models:
+
 - [Statistical models](https://www.kaggle.com/code/trhgquan/disaster-tweet-tfidf)
 
 Deep learning models:
+
 - [RNN](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-rnn-from-tensorflow-tutorial)
 - [RNN with Attention](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-rnn-attention)
 - [CNN](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn)
 - [Multi-channel CNN with RNN](https://www.kaggle.com/trhgquan/disaster-tweet-using-cnn-and-rnn)
+- [Multi-channel CNN with RNN (concat)](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn-and-rnn-concating)
 - [LLMs](https://www.kaggle.com/code/trhgquan/disaster-tweet-with-llms)
 
 ## Code
@@ -85,7 +88,7 @@ However there are some exceptions where a specific preprocessing method of the p
 | Learning rate            | 1e-4        |
 | Epochs                   | 100         |
 | Vocab size               | 10000       |
-| Early stopping           | 5 epochs    |
+| Early stopping           | 20 epochs   |
 | Classification threshold | 0.5         |
 
 </details>
@@ -109,12 +112,25 @@ CNN & RNN feed model:
 | Learning rate            | 1e-4        |
 | Epochs                   | 100         |
 | Vocab size               | 10000       |
-| Early stopping           | 5 epochs    |
+| Early stopping           | 20 epochs   |
 | Classification threshold | 0.5         |
 
 CNN & RNN concat model:
 
-(todo)
+| Hyperparameter           | Value       |
+| ------------------------ | ----------- |
+| Train:test               | 8:2         |
+| Batch size  (Train/test) | 64/32       |
+| Recurrent units          | 512         |
+| Filter size              | 200         |
+| Window size              | `[1, 2, 3]` |
+| Dropout rate             | 0.5         |
+| Dense unit               | 64          |
+| Learning rate            | 1e-4        |
+| Epochs                   | 100         |
+| Vocab size               | 10000       |
+| Early stopping           | 5 epochs    |
+| Classification threshold | 0.5         |
 
 </details>
 
@@ -521,13 +537,41 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
+        <td>Embedding dimension = 200</td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-25, static)</td>
+        <td>1,453,721</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-50, static)</td>
+        <td>1,784,921</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
         <td>Random embedding (nonstatic)</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.75574</td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-25, nonstatic)</td>
+        <td>1,453,721</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-50, nonstatic)</td>
+        <td>1,784,921</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
         <td></td>
     </tr>
 </tbody>

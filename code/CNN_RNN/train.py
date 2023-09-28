@@ -12,6 +12,7 @@ from dataset import create_dataset
 
 def main():
     parser = ArgumentParser()
+    parser.add_argument("--model_type", default="feed")
     parser.add_argument("--train", default="train.csv")
     parser.add_argument("--train_size", default=.8)
     parser.add_argument("--test_size", default=.2)
@@ -49,7 +50,7 @@ def main():
 
     encoder = create_encoder(X_train=X_train, VOCAB_SIZE=args.vocab_size)
 
-    batch_size = args.batch_size
+    model_type, batch_size = args.model_type, args.batch_size
     learning_rate, dropout_rate = args.learning_rate, args.dropout_rate
     embedding_dim, sequence_length = args.embedding_dim, args.sequence_length
     filters, num_filters = args.filters, args.num_filters
@@ -61,7 +62,8 @@ def main():
     val_ds = create_dataset(data=X_test, label=y_test,
                             batch_size=batch_size//2)
 
-    model = create_model(encoder=encoder,
+    model = create_model(model_type=model_type,
+                         encoder=encoder,
                          embedding_dim=embedding_dim,
                          embedding_name=embedding_name,
                          embedding_trainable=embedding_trainable,
