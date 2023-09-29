@@ -536,14 +536,14 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>Random embedding (static)</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.78394</td>
         <td>Embedding dimension = 200</td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-25, static)</td>
         <td>1,453,721</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.80110</td>
         <td></td>
     </tr>
     <tr>
@@ -571,21 +571,21 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>Random embedding (nonstatic)</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.74164</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-25, nonstatic)</td>
         <td>1,453,721</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.80876</td>
         <td></td>
     </tr>
     <tr>
         <td>GloVe (glove-twitter-50, nonstatic)</td>
         <td>1,784,921</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.81091</td>
         <td></td>
     </tr>
 	<tr>
