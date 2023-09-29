@@ -550,23 +550,23 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-50, static)</td>
         <td>1,784,921</td>
         <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.81091</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-100, static)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
     </tr>
-	<tr>
-	    <td>GloVe (glove-twitter-100, static)</td>
-		<td></td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>GloVe (glove-twitter-200, static)</td>
-		<td></td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td>GloVe (glove-twitter-200, static)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
     <tr>
         <td>Random embedding (nonstatic)</td>
         <td>3,772,121</td>
@@ -585,23 +585,23 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-50, nonstatic)</td>
         <td>1,784,921</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.81091</td>
+        <td>(todo)</td>
         <td></td>
     </tr>
-	<tr>
-	    <td>GloVe (glove-twitter-100, nonstatic)</td>
-		<td></td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>GloVe (glove-twitter-200, nonstatic)</td>
-		<td></td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td>GloVe (glove-twitter-100, nonstatic)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-200, nonstatic)</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
 </tbody>
 </table>
 
