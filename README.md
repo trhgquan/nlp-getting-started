@@ -469,10 +469,24 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>Random embedding (static) + Bidirectional LSTM</td>
+        <td>4,411,609</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.68709</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
         <td>1,366,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.68372</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-25, static) + Bidirectional LSTM</td>
+        <td>2,451,609</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.78669</td>
         <td></td>
     </tr>
     <tr>
@@ -483,10 +497,24 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>GloVe (glove-twitter-50, static) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.76739</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>GloVe (glove-twitter-100, static) + Unidirectional LSTM</td>
         <td>2,206,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.73460</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-100, static) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
@@ -497,10 +525,24 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>GloVe (glove-twitter-200, static) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Random embedding (nonstatic) + Unidirectional LSTM</td>
         <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.71284</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Random embedding (nonstatic) + Bidirectional LSTM</td>
+        <td>4,411,609</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.75390</td>
         <td></td>
     </tr>
     <tr>
@@ -511,10 +553,24 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>Glove (glove-twitter-25, nonstatic) + Bidirectional LSTM</td>
+        <td>2,451,609</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.75574</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>GloVe (glove-twitter-50, nonstatic) + Unidirectional LSTM</td>
         <td>1,646,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.78240</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-50, nonstatic) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
@@ -525,6 +581,13 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>GloVe (glove-twitter-100, nonstatic) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>GloVe (glove-twitter-200, nonstatic) + Unidirectional LSTM</td>
         <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -532,72 +595,79 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>GloVe (glove-twitter-200, nonstatic) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
         <td rowspan="10"><a href="https://ieeexplore.ieee.org/document/8119429">Multi-channel CNN and RNN (concat)</a></td>
-        <td>Random embedding (static)</td>
+        <td>Random embedding (static) + Unidirectional LSTM</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.78394</td>
         <td>Embedding dimension = 200</td>
     </tr>
     <tr>
-        <td>GloVe (glove-twitter-25, static)</td>
+        <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
         <td>1,453,721</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80110</td>
         <td></td>
     </tr>
     <tr>
-        <td>GloVe (glove-twitter-50, static)</td>
+        <td>GloVe (glove-twitter-50, static) + Unidirectional LSTM</td>
         <td>1,784,921</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.81091</td>
         <td></td>
     </tr>
     <tr>
-        <td>GloVe (glove-twitter-100, static)</td>
+        <td>GloVe (glove-twitter-100, static) + Unidirectional LSTM</td>
         <td>2,447,321</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80539</td>
         <td></td>
     </tr>
     <tr>
-        <td>GloVe (glove-twitter-200, static)</td>
-        <td></td>
+        <td>GloVe (glove-twitter-200, static) + Unidirectional LSTM</td>
+        <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80723</td>
         <td></td>
     </tr>
     <tr>
-        <td>Random embedding (nonstatic)</td>
+        <td>Random embedding (nonstatic) + Unidirectional LSTM</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.74164</td>
         <td></td>
     </tr>
     <tr>
-        <td>GloVe (glove-twitter-25, nonstatic)</td>
+        <td>GloVe (glove-twitter-25, nonstatic) + Unidirectional LSTM</td>
         <td>1,453,721</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80876</td>
         <td></td>
     </tr>
     <tr>
-        <td>GloVe (glove-twitter-50, nonstatic)</td>
+        <td>GloVe (glove-twitter-50, nonstatic) + Unidirectional LSTM</td>
         <td>1,784,921</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80539</td>
         <td></td>
     </tr>
     <tr>
-        <td>GloVe (glove-twitter-100, nonstatic)</td>
+        <td>GloVe (glove-twitter-100, nonstatic) + Unidirectional LSTM</td>
         <td>2,447,321</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.81029</td>
         <td></td>
     </tr>
     <tr>
-        <td>GloVe (glove-twitter-200, nonstatic)</td>
-        <td></td>
+        <td>GloVe (glove-twitter-200, nonstatic) + Unidirectional LSTM</td>
+        <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80508</td>
         <td></td>
