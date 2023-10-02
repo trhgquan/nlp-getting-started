@@ -461,7 +461,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
-        <td rowspan="10"><a href="https://aclanthology.org/S17-2134/">Multi-channel CNN and RNN</a></td>
+        <td rowspan="20"><a href="https://aclanthology.org/S17-2134/">Multi-channel CNN and RNN</a></td>
         <td>Random embedding (static) + Unidirectional LSTM</td>
         <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -498,7 +498,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>GloVe (glove-twitter-50, static) + Bidirectional LSTM</td>
-        <td></td>
+        <td>2,731,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.76739</td>
         <td></td>
@@ -512,9 +512,9 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>GloVe (glove-twitter-100, static) + Bidirectional LSTM</td>
-        <td></td>
+        <td>3,291,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.73551</td>
         <td></td>
     </tr>
     <tr>
@@ -568,7 +568,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>GloVe (glove-twitter-50, nonstatic) + Bidirectional LSTM</td>
-        <td></td>
+        <td>2,731,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
@@ -582,7 +582,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>GloVe (glove-twitter-100, nonstatic) + Bidirectional LSTM</td>
-        <td></td>
+        <td>3,291,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>(todo)</td>
         <td></td>
