@@ -16,7 +16,7 @@ Deep learning models:
 - [RNN](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-rnn-from-tensorflow-tutorial)
 - [RNN with Attention](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-rnn-attention)
 - [CNN](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn)
-- [Multi-channel CNN with RNN](https://www.kaggle.com/trhgquan/disaster-tweet-using-cnn-and-rnn)
+- Multi-channel CNN with RNN - [unidirectional](https://www.kaggle.com/trhgquan/disaster-tweet-using-cnn-and-rnn) & [bidirectional](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn-and-birnn)
 - [Multi-channel CNN with RNN (concat)](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn-and-rnn-concating)
 - [LLMs](https://www.kaggle.com/code/trhgquan/disaster-tweet-with-llms)
 
