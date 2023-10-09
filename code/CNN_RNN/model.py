@@ -43,7 +43,9 @@ class CNN_RNN(tf.keras.Model):
                  dropout_rate=.5):
         super().__init__()
 
-        assert recurrent_type in ["lstm", "gru"]
+        recurrent_type = recurrent_type.lower()
+
+        assert recurrent_type in ["lstm", "bilstm", "gru", "bigru"]
 
         self.filters = filters
         self.num_filters = num_filters
@@ -105,10 +107,26 @@ class CNN_RNN(tf.keras.Model):
                 return_state=True
             )
 
+        elif self.recurrent_type == "bilstm":
+            self.recurrent = tf.keras.layers.Bidirectional(
+                tf.keras.layers.LSTM(
+                    units=self.recurrent_units,
+                    return_state=True
+                )
+            )
+
         elif self.recurrent_type == "gru":
             self.recurrent = tf.keras.layers.GRU(
                 units=self.recurrent_units,
                 return_state=True
+            )
+
+        elif self.recurrent_type == "bigru":
+            self.recurrent = tf.keras.layers.Bidirectional(
+                tf.keras.layers.GRU(
+                    units=self.recurrent_units,
+                    return_state=True
+                )
             )
 
         self.dropout = tf.keras.layers.Dropout(self.dropout_rate)
@@ -160,7 +178,9 @@ class CNN_RNN_Concat(CNN_RNN):
                  dropout_rate=.5):
         super().__init__()
 
-        assert recurrent_type in ["lstm", "gru"]
+        recurrent_type = recurrent_type.lower()
+
+        assert recurrent_type in ["lstm", "bilstm", "gru", "bigru"]
 
         self.filters = filters
         self.num_filters = num_filters
@@ -222,10 +242,26 @@ class CNN_RNN_Concat(CNN_RNN):
                 return_state=True
             )
 
+        elif self.recurrent_type == "bilstm":
+            self.recurrent = tf.keras.layers.Bidirectional(
+                tf.keras.layers.LSTM(
+                    units=self.recurrent_units,
+                    return_state=True
+                )
+            )
+
         elif self.recurrent_type == "gru":
             self.recurrent = tf.keras.layers.GRU(
                 units=self.recurrent_units,
                 return_state=True
+            )
+
+        elif self.recurrent_type == "bigru":
+            self.recurrent = tf.keras.layers.Bidirectional(
+                tf.keras.layers.GRU(
+                    units=self.recurrent_units,
+                    return_state=True
+                )
             )
 
         self.concat_rnn_cnn = tf.keras.layers.Concatenate(axis=1)
