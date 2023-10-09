@@ -486,7 +486,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-25, static) + Bidirectional LSTM</td>
         <td>2,451,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.78669</td>
+        <td>0.78976</td>
         <td></td>
     </tr>
     <tr>
@@ -500,7 +500,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-50, static) + Bidirectional LSTM</td>
         <td>2,731,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.76739</td>
+        <td>0.78148</td>
         <td></td>
     </tr>
     <tr>
@@ -514,7 +514,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-100, static) + Bidirectional LSTM</td>
         <td>3,291,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.73551</td>
+        <td>0.78700</td>
         <td></td>
     </tr>
     <tr>
@@ -556,7 +556,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>Glove (glove-twitter-25, nonstatic) + Bidirectional LSTM</td>
         <td>2,451,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>0.75574</td>
+        <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
