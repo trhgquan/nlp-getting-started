@@ -17,7 +17,7 @@ Deep learning models:
 - [RNN with Attention](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-rnn-attention)
 - [CNN](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn)
 - Multi-channel CNN with RNN - [unidirectional](https://www.kaggle.com/trhgquan/disaster-tweet-using-cnn-and-rnn) & [bidirectional](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn-and-birnn)
-- [Multi-channel CNN with RNN (concat)](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn-and-rnn-concating)
+- Multi-channel CNN with RNN (concat) - [unidirectional](https://www.kaggle.com/code/trhgquan/disaster-tweet-using-cnn-and-rnn-concating) & [bidirectional](https://www.kaggle.com/trhgquan/disaster-tweet-using-cnn-and-birnn-concating)
 - [LLMs](https://www.kaggle.com/code/trhgquan/disaster-tweet-with-llms)
 
 ## Code
@@ -115,6 +115,24 @@ CNN & RNN feed model:
 | Early stopping           | 20 epochs   |
 | Classification threshold | 0.5         |
 
+CNN & BiRNN feed model:
+
+| Hyperparameter           | Value       |
+| ------------------------ | ----------- |
+| Train:test               | 8:2         |
+| Batch size  (Train/test) | 64/32       |
+| Recurrent units          | 512         |
+| Filter size              | 200         |
+| Window size              | `[1, 2, 3]` |
+| Dropout rate             | 0.5         |
+| Dense unit               | 64          |
+| Learning rate            | 1e-4        |
+| Epochs                   | 100         |
+| Vocab size               | 10000       |
+| Early stopping           | 10 epochs   |
+| Classification threshold | 0.5         |
+
+
 CNN & RNN concat model:
 
 | Hyperparameter           | Value       |
@@ -130,6 +148,23 @@ CNN & RNN concat model:
 | Epochs                   | 100         |
 | Vocab size               | 10000       |
 | Early stopping           | 5 epochs    |
+| Classification threshold | 0.5         |
+
+CNN & BiRNN concat model:
+
+| Hyperparameter           | Value       |
+| ------------------------ | ----------- |
+| Train:test               | 8:2         |
+| Batch size  (Train/test) | 64/32       |
+| Recurrent units          | 512         |
+| Filter size              | 200         |
+| Window size              | `[1, 2, 3]` |
+| Dropout rate             | 0.5         |
+| Dense unit               | 64          |
+| Learning rate            | 1e-4        |
+| Epochs                   | 100         |
+| Vocab size               | 10000       |
+| Early stopping           | 10 epochs   |
 | Classification threshold | 0.5         |
 
 </details>
@@ -584,7 +619,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-100, nonstatic) + Bidirectional LSTM</td>
         <td>3,291,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.76064</td>
         <td></td>
     </tr>
     <tr>
@@ -598,22 +633,36 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>GloVe (glove-twitter-200, nonstatic) + Bidirectional LSTM</td>
         <td>4,411,609</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.77474</td>
         <td></td>
     </tr>
     <tr>
-        <td rowspan="10"><a href="https://ieeexplore.ieee.org/document/8119429">Multi-channel CNN and RNN (concat)</a></td>
+        <td rowspan="20"><a href="https://ieeexplore.ieee.org/document/8119429">Multi-channel CNN and RNN (concat)</a></td>
         <td>Random embedding (static) + Unidirectional LSTM</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.78394</td>
         <td>Embedding dimension = 200</td>
     </tr>
+	<tr>
+		<td>Random embedding (static) + Bidirectional LSTM</td>
+		<td>5,265,113</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>0.78700</td>
+		<td></td>
+	</tr>
     <tr>
         <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
         <td>1,453,721</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80110</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-25, static) + Bidirectional LSTM</td>
+        <td>2,588,313</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.79436</td>
         <td></td>
     </tr>
     <tr>
@@ -623,11 +672,25 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.81091</td>
         <td></td>
     </tr>
+	<tr>
+	    <td>GloVe (glove-twitter-50, static) + Bidirectional LSTM</td>
+		<td></td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
     <tr>
         <td>GloVe (glove-twitter-100, static) + Unidirectional LSTM</td>
         <td>2,447,321</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80539</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-100, static) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
@@ -638,6 +701,13 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>GloVe (glove-twitter-200, static) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Random embedding (nonstatic) + Unidirectional LSTM</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -645,10 +715,24 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>Random embedding (nonstatic) + Bidirectional LSTM</td>
+        <td>5,265,113</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.77444</td>
+        <td></td>
+    </tr> 
+    <tr>
         <td>GloVe (glove-twitter-25, nonstatic) + Unidirectional LSTM</td>
         <td>1,453,721</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80876</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-25, nonstatic) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
         <td></td>
     </tr>
     <tr>
@@ -659,6 +743,13 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>GloVe (glove-twitter-50, nonstatic) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>GloVe (glove-twitter-100, nonstatic) + Unidirectional LSTM</td>
         <td>2,447,321</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -666,10 +757,24 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>GloVe (glove-twitter-100, nonstatic) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>GloVe (glove-twitter-200, nonstatic) + Unidirectional LSTM</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.80508</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-200, nonstatic) + Bidirectional LSTM</td>
+        <td></td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
         <td></td>
     </tr>
 </tbody>
