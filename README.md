@@ -644,13 +644,13 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.78394</td>
         <td>Embedding dimension = 200</td>
     </tr>
-	<tr>
-		<td>Random embedding (static) + Bidirectional LSTM</td>
-		<td>5,265,113</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.78700</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td>Random embedding (static) + Bidirectional LSTM</td>
+        <td>5,265,113</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.78700</td>
+        <td></td>
+    </tr>
     <tr>
         <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
         <td>1,453,721</td>
@@ -672,13 +672,13 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.81091</td>
         <td></td>
     </tr>
-	<tr>
-	    <td>GloVe (glove-twitter-50, static) + Bidirectional LSTM</td>
-		<td>2,970,713</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.81366</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td>GloVe (glove-twitter-50, static) + Bidirectional LSTM</td>
+        <td>2,970,713</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.81366</td>
+        <td></td>
+    </tr>
     <tr>
         <td>GloVe (glove-twitter-100, static) + Unidirectional LSTM</td>
         <td>2,447,321</td>
