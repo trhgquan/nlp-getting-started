@@ -496,7 +496,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
-        <td rowspan="40"><a href="https://aclanthology.org/S17-2134/">Multi-channel CNN and RNN</a></td>
+        <td rowspan="24"><a href="https://aclanthology.org/S17-2134/">Multi-channel CNN and RNN</a></td>
         <td>Random embedding (static) + Unidirectional LSTM</td>
         <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -665,7 +665,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
-        <td rowspan="40"><a href="https://ieeexplore.ieee.org/document/8119429">Multi-channel CNN and RNN (concat)</a></td>
+        <td rowspan="30"><a href="https://ieeexplore.ieee.org/document/8119429">Multi-channel CNN and RNN (concat)</a></td>
         <td>Random embedding (static) + Unidirectional LSTM</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -688,9 +688,9 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
 	</tr>
 	<tr>
 	    <td>Random embedding (static) + Bidirectional GRU</td>
-		<td>(todo)</td>
+		<td>4,538,073</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
+		<td>0.77627</td>
 		<td></td>
 	</tr>
     <tr>
@@ -705,6 +705,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>2,588,313</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.79436</td>
+        <td></td>
+    </tr>
+        <tr>
+        <td>GloVe (glove-twitter-25, static) + Unidirectional GRU</td>
+        <td>(todo)</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-25, static) + Bidirectional GRU</td>
+        <td>2,040,473</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.79528</td>
         <td></td>
     </tr>
     <tr>
@@ -772,9 +786,9 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
 	</tr>
 	<tr>
 	    <td>Random embedding (nonstatic) + Bidirectional GRU</td>
-		<td>(todo)</td>
+		<td>4,538,073</td>
 		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
+		<td>0.80049</td>
 		<td></td>
 	</tr>
     <tr>
