@@ -496,7 +496,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
-        <td rowspan="20"><a href="https://aclanthology.org/S17-2134/">Multi-channel CNN and RNN</a></td>
+        <td rowspan="40"><a href="https://aclanthology.org/S17-2134/">Multi-channel CNN and RNN</a></td>
         <td>Random embedding (static) + Unidirectional LSTM</td>
         <td>3,326,169</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -510,6 +510,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.68709</td>
         <td></td>
     </tr>
+	<tr>
+	    <td>Random embedding (static) + Unidirectional GRU</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+	    <td>Random embedding (static) + Bidirectional GRU</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>	
     <tr>
         <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
         <td>1,366,169</td>
@@ -580,6 +594,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.75390</td>
         <td></td>
     </tr>
+	<tr>
+	    <td>Random embedding (nonstatic) + Unidirectional GRU</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+	    <td>Random embedding (nonstatic) + Bidirectional GRU</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
     <tr>
         <td>GloVe (glove-twitter-25, nonstatic) + Unidirectional LSTM</td>
         <td>1,366,169</td>
@@ -637,7 +665,7 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
-        <td rowspan="20"><a href="https://ieeexplore.ieee.org/document/8119429">Multi-channel CNN and RNN (concat)</a></td>
+        <td rowspan="40"><a href="https://ieeexplore.ieee.org/document/8119429">Multi-channel CNN and RNN (concat)</a></td>
         <td>Random embedding (static) + Unidirectional LSTM</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -651,6 +679,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.78700</td>
         <td></td>
     </tr>
+	<tr>
+	    <td>Random embedding (static) + Unidirectional GRU</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+	    <td>Random embedding (static) + Bidirectional GRU</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
     <tr>
         <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
         <td>1,453,721</td>
@@ -721,6 +763,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.77444</td>
         <td></td>
     </tr> 
+	<tr>
+	    <td>Random embedding (nonstatic) + Unidirectional GRU</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
+	<tr>
+	    <td>Random embedding (nonstatic) + Bidirectional GRU</td>
+		<td>(todo)</td>
+		<td><a href="#deep-learning-models">[3]</a></td>
+		<td>(todo)</td>
+		<td></td>
+	</tr>
     <tr>
         <td>GloVe (glove-twitter-25, nonstatic) + Unidirectional LSTM</td>
         <td>1,453,721</td>
@@ -758,9 +814,9 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>GloVe (glove-twitter-100, nonstatic) + Bidirectional LSTM</td>
-        <td></td>
+        <td>3,735,513</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.80968</td>
         <td></td>
     </tr>
     <tr>
@@ -772,9 +828,9 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>GloVe (glove-twitter-200, nonstatic) + Bidirectional LSTM</td>
-        <td></td>
+        <td>5,265,113</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.81182</td>
         <td></td>
     </tr>
 </tbody>
