@@ -510,20 +510,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.68709</td>
         <td></td>
     </tr>
-	<tr>
-	    <td>Random embedding (static) + Unidirectional GRU</td>
-		<td>(todo)</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>Random embedding (static) + Bidirectional GRU</td>
-		<td>(todo)</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>	
+    <tr>
+        <td>Random embedding (static) + Unidirectional GRU</td>
+        <td>(todo)</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Random embedding (static) + Bidirectional GRU</td>
+        <td>(todo)</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>	
     <tr>
         <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
         <td>1,366,169</td>
@@ -594,20 +594,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.75390</td>
         <td></td>
     </tr>
-	<tr>
-	    <td>Random embedding (nonstatic) + Unidirectional GRU</td>
-		<td>(todo)</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>Random embedding (nonstatic) + Bidirectional GRU</td>
-		<td>(todo)</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td>Random embedding (nonstatic) + Unidirectional GRU</td>
+        <td>(todo)</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Random embedding (nonstatic) + Bidirectional GRU</td>
+        <td>(todo)</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
     <tr>
         <td>GloVe (glove-twitter-25, nonstatic) + Unidirectional LSTM</td>
         <td>1,366,169</td>
@@ -679,20 +679,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.78700</td>
         <td></td>
     </tr>
-	<tr>
-	    <td>Random embedding (static) + Unidirectional GRU</td>
-		<td>(todo)</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>Random embedding (static) + Bidirectional GRU</td>
-		<td>4,538,073</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.77627</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td>Random embedding (static) + Unidirectional GRU</td>
+        <td>(todo)</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Random embedding (static) + Bidirectional GRU</td>
+        <td>4,538,073</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.77627</td>
+        <td></td>
+    </tr>
     <tr>
         <td>GloVe (glove-twitter-25, static) + Unidirectional LSTM</td>
         <td>1,453,721</td>
@@ -777,20 +777,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.77444</td>
         <td></td>
     </tr> 
-	<tr>
-	    <td>Random embedding (nonstatic) + Unidirectional GRU</td>
-		<td>(todo)</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>(todo)</td>
-		<td></td>
-	</tr>
-	<tr>
-	    <td>Random embedding (nonstatic) + Bidirectional GRU</td>
-		<td>4,538,073</td>
-		<td><a href="#deep-learning-models">[3]</a></td>
-		<td>0.80049</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td>Random embedding (nonstatic) + Unidirectional GRU</td>
+        <td>(todo)</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Random embedding (nonstatic) + Bidirectional GRU</td>
+        <td>4,538,073</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.80049</td>
+        <td></td>
+    </tr>
     <tr>
         <td>GloVe (glove-twitter-25, nonstatic) + Unidirectional LSTM</td>
         <td>1,453,721</td>
