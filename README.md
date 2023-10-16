@@ -904,6 +904,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td></td>
     </tr>
     <tr>
+        <td>GloVe (glove-twitter-100, nonstatic) + Unidirectional GRU</td>
+        <td>(todo)</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-100, nonstatic) + Bidirectional GRU</td>
+        <td>3,110,873</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.80815</td>
+        <td></td>
+    </tr>
+    <tr>
         <td>GloVe (glove-twitter-200, nonstatic) + Unidirectional LSTM</td>
         <td>3,772,121</td>
         <td><a href="#deep-learning-models">[3]</a></td>
@@ -915,6 +929,20 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>5,265,113</td>
         <td><a href="#deep-learning-models">[3]</a></td>
         <td>0.81182</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-200, nonstatic) + Unidirectional GRU</td>
+        <td>(todo)</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>(todo)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GloVe (glove-twitter-200, nonstatic) + Bidirectional GRU</td>
+        <td>4,538,073</td>
+        <td><a href="#deep-learning-models">[3]</a></td>
+        <td>0.80999</td>
         <td></td>
     </tr>
 </tbody>
