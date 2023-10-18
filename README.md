@@ -681,9 +681,9 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>Random embedding (static) + Unidirectional GRU</td>
-        <td>(todo)</td>
+        <td>3,408,601</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.78302</td>
         <td></td>
     </tr>
     <tr>
@@ -707,11 +707,11 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
         <td>0.79436</td>
         <td></td>
     </tr>
-        <tr>
+    <tr>
         <td>GloVe (glove-twitter-25, static) + Unidirectional GRU</td>
-        <td>(todo)</td>
+        <td>1,179,801</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.80294</td>
         <td></td>
     </tr>
     <tr>
@@ -737,9 +737,9 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>GloVe (glove-twitter-50, static) + Unidirectional GRU</td>
-        <td>(todo)</td>
+        <td>1,498,201</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>0.80907</td>
         <td></td>
     </tr>
     <tr>
@@ -793,9 +793,9 @@ All remaining hyperparametes stay the same as [LLMs](#LLMs).
     </tr>
     <tr>
         <td>GloVe (glove-twitter-200, static) + Unidirectional GRU</td>
-        <td>(todo)</td>
+        <td>3,408,601</td>
         <td><a href="#deep-learning-models">[3]</a></td>
-        <td>(todo)</td>
+        <td>3,408,601</td>
         <td></td>
     </tr>
     <tr>
